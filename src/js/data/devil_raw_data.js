@@ -187,6 +187,32 @@ export default [
 				"source": "normal_fusion"
 			},
 			{
+				"id": "283",
+				"name": "スラオシャ",
+				"names": {
+					"ja": "スラオシャ",
+					"tw": "斯勞沙",
+					"en": "Sraosha"
+				},
+				"rarity": 5,
+				"grade": 82,
+				"icon": "daitensi_sraosha.jpg",
+				"skills": ["スピードスター","死魂の裁定","ソウルブレイク"],
+				"skill4": ["三段の剛力","空間殺法","スクカオート","致命の一撃","破魔吸収"],
+				"skill5": ["","物理ハイブースタ","スクンダオート","ミナゴロシの愉悦","緊縛無効"],
+				"elements": ["","","","dr","","nu","wk"],
+				"type": "attack",
+				"fusion": true,
+				"fusionAsMaterial": true,
+				"formula": [
+					"スレイプニル",
+					"バロン",
+					"ヴァーチャー"
+				],
+				"fusionMag": 5000000,
+				"source": "multi_fusion"
+			},
+			{
 				"id": "3",
 				"name": "アズラエル",
 				"names": {
@@ -641,6 +667,28 @@ export default [
 				],
 				"fusionMag": 5000000,
 				"source": "multi_fusion"
+			},
+			{
+				"id": "286",
+				"name": "マハーマユリ",
+				"names": {
+					"ja": "マハーマユリ",
+					"tw": "孔雀明王",
+					"en": "Mahamayuri"
+				},
+				"rarity": 5,
+				"grade": 85,
+				"icon": "masin_mahamayuri.jpg",
+				"skills": ["衝撃ハイブースタ","孔雀明王","慈愛の旋風"],
+				"skill4": ["","マハザンダイン","ラスタキャンディ","大暗殺者","電撃無効"],
+				"skill5": ["","衝撃エンハンス","強壮の権化","寸分の見切り","不屈の闘志"],
+				"elements": ["","rs","","wk","rp","nu",""],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
 			},
 			{
 				"id": "248",
@@ -1691,7 +1739,7 @@ export default [
 			"en": "Kishin"
 		},
 		"fusion": true,
-		"highlight": false,
+		"highlight": true,
 		"formulas": [["幻魔","神獸"],["破壞神","聖獸"],["破壞神","靈鳥"],["龍王","靈鳥"],["妖鬼","靈鳥"],["妖鬼","神獸"],["夜魔","地母神"],["外道","魔神"],["外道","邪鬼"],["邪鬼","地母神"],["地靈","地母神"],["邪龍","神獸"],["邪龍","龍神"],["邪龍","夜魔"],["幽鬼","邪龍"],["兇鳥","地母神"]],
 		"devils": [
 			{
@@ -1709,6 +1757,28 @@ export default [
 				"skill4": ["三段の強運","刹那五月雨撃ち","早手の舞い","千発千中","破魔吸収"],
 				"skill5": ["","スクカオート","リベリオート","無慈悲な一撃","緊縛無効"],
 				"elements": ["","nu","","","","rs",""],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
+				"id": "284",
+				"name": "トール【異世界】",
+				"names": {
+					"ja": "トール【異世界】",
+					"tw": "索爾【異世界】",
+					"en": "Thor A"
+				},
+				"rarity": 5,
+				"grade": 83,
+				"icon": "kisin_thorA.jpg",
+				"skills": ["三分の活泉","メギンギョルズ","雷神の戦鎚"],
+				"skill4": ["","ギガントマキア","タルカオート","電撃ハイブースタ","物理吸収"],
+				"skill5": ["","嗜虐の一撃","陽光の繁栄","千発千中","衝撃無効"],
+				"elements": ["nu","nu","","dr","wk","rs",""],
 				"type": "attack",
 				"fusion": false,
 				"fusionAsMaterial": true,
@@ -2048,6 +2118,28 @@ export default [
 		"fusion": true,
 		"formulas": [["幻魔","聖獸"],["鬼神","幻魔"],["墮天使","幻魔"],["邪神","靈鳥"],["邪神","聖獸"],["妖獸","幻魔"],["外道","夜魔"],["外道","破壞神"],["魔王","幻魔"],["地靈","靈鳥"],["地靈","魔獸"],["夜魔","邪鬼"]],
 		"devils": [
+			{
+				"id": "282",
+				"name": "マスターテリオン",
+				"names": {
+					"ja": "マスターテリオン",
+					"tw": "啟示錄之獸",
+					"en": "Master Therion"
+				},
+				"rarity": 5,
+				"grade": 82,
+				"icon": "majuu_mastertherion.jpg",
+				"skills": ["魔封無効","獣の烙印","ブラスフェミー"],
+				"skill4": ["","マハブフダイン","マハシバブー","狂乱の権化","火炎吸収"],
+				"skill5": ["","四源相生","狂い咲き","マハラギダイン","破魔無効"],
+				"elements": ["","nu","dr","","","wk","rs"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
 			{
 				"id": "67",
 				"name": "ガネーシャ",
@@ -3712,6 +3804,28 @@ export default [
 				"source": "normal_fusion"
 			},
 			{
+				"id": "288",
+				"name": "パレス",
+				"names": {
+					"ja": "パレス",
+					"tw": "帕雷斯",
+					"en": "Pales"
+				},
+				"rarity": 5,
+				"grade": 83,
+				"icon": "jyasin_pales.jpg",
+				"skills": ["超自然治癒","邪神殿の威光","貧者の号哭"],
+				"skill4": ["","ネクロ・ドグマ","リカームドラ","幻影の権化","火炎無効"],
+				"skill5": ["","スクカオート","快癒サバイバ","勇奮の鼓舞","ディスタブ"],
+				"elements": ["","wk","rp","","","rp","dr"],
+				"type": "support",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
 				"id": "121",
 				"name": "ギリメカラ",
 				"names": {
@@ -4348,6 +4462,28 @@ export default [
 				"source": "normal_fusion"
 			},
 			{
+				"id": "285",
+				"name": "スルト【異世界】",
+				"names": {
+					"ja": "スルト【異世界】",
+					"tw": "史爾特爾【異世界】",
+					"en": "Surt A"
+				},
+				"rarity": 5,
+				"grade": 83,
+				"icon": "maou_surtA.jpg",
+				"skills": ["火炎ハイブースタ","黄昏の焔","イラプション"],
+				"skill4": ["","トリスアギオン","コンセントレイト","威圧の構え","氷結反射"],
+				"skill5": ["","火炎エンハンス","大虐殺者","魔封無効","月影の衰退"],
+				"elements": ["nu","rp","wk","","","",""],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
 				"id": "247",
 				"name": "ヘカーテ",
 				"names": {
@@ -4751,6 +4887,50 @@ export default [
 				"source": "summon"
 			},
 			{
+				"id": "279",
+				"name": "狂戦士ガッツ",
+				"names": {
+					"ja": "狂戦士ガッツ",
+					"tw": "狂戰士凱茲",
+					"en": "Berserker Guts"
+				},
+				"rarity": 5,
+				"grade": 90,
+				"icon": "majin_berserker_guts.jpg",
+				"skills": ["千発千中","狂戦士の甲冑","ベルセルク"],
+				"skill4": ["","暴飲暴食","討滅の咆哮","致命の一撃","物理反射"],
+				"skill5": ["","デスカウンター","龍の反応","ギガントマキア","破壊の権化"],
+				"elements": ["nu","","","","","","rs"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": false,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
+				"id": "281",
+				"name": "ゾッド",
+				"names": {
+					"ja": "ゾッド",
+					"tw": "索特",
+					"en": "Zodd"
+				},
+				"rarity": 5,
+				"grade": 90,
+				"icon": "majin_zodd.jpg",
+				"skills": ["破壊の権化","不死者","引きちぎり"],
+				"skill4": ["勝利のチャクラ","メガトンレイド","チャージ","即死無効","物理吸収"],
+				"skill5": ["","物理ハイブースタ","強靭の権化","超自然治癒","ミナゴロシの愉悦"],
+				"elements": ["nu","","","","","","nu"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": false,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
 				"id": "",
 				"name": "ダンテ☆",
 				"names": {
@@ -5108,6 +5288,28 @@ export default [
 				"skill4": ["不屈の闘志","ギガントマキア","チャージ","物理ハイブースタ","物理吸収"],
 				"skill5": ["","ゴッドハンド","スクカオート","ミナゴロシの愉悦","氷結耐性"],
 				"elements": ["rs","","","","","nu","nu"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": false,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
+				"id": "280",
+				"name": "グリフィス",
+				"names": {
+					"ja": "グリフィス",
+					"tw": "古力菲斯",
+					"en": "Griffith"
+				},
+				"rarity": 5,
+				"grade": 95,
+				"icon": "eiyuu_griffith.jpg",
+				"skills": ["寸分の見切り","光の鷹","絶対者の剣"],
+				"skill4": ["","空間殺法","疾風の咆哮","信義なる反撃","物理反射"],
+				"skill5": ["","致命の一撃","大暗殺者","鋭気の権化","魔封無効"],
+				"elements": ["nu","","","","","dr","nu"],
 				"type": "attack",
 				"fusion": false,
 				"fusionAsMaterial": false,
@@ -6219,6 +6421,28 @@ export default [
 				"skill5": ["","ミナゴロシの愉悦","スクカオート","三段の剛力","氷結耐性"],
 				"elements": ["","rs","wk","","","rs","rp"],
 				"type": "support",
+				"fusion": false,
+				"fusionAsMaterial": false,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
+				"id": "287",
+				"name": "ケルヌンノス",
+				"names": {
+					"ja": "ケルヌンノス",
+					"tw": "塞努諾斯",
+					"en": "Cernunnos"
+				},
+				"rarity": 5,
+				"grade": 81,
+				"icon": "sinigami_cernunnos.jpg",
+				"skills": ["不屈の闘志・改","死生の扉","死魂の狩猟"],
+				"skill4": ["","メギドラ","奈落のマスク","呪殺ハイブースタ","衝撃無効"],
+				"skill5": ["","奈落のマスク","大暗殺者","マハムドダイン","強靭の権化"],
+				"elements": ["","","","rp","wk","","rp"],
+				"type": "attack",
 				"fusion": false,
 				"fusionAsMaterial": false,
 				"formula": [],
