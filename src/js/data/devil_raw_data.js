@@ -1717,7 +1717,7 @@ export default [
 			"en": "Kishin"
 		},
 		"fusion": true,
-		"highlight": false,
+		"highlight": true,
 		"formulas": [["幻魔","神獸"],["破壞神","聖獸"],["破壞神","靈鳥"],["龍王","靈鳥"],["妖鬼","靈鳥"],["妖鬼","神獸"],["夜魔","地母神"],["外道","魔神"],["外道","邪鬼"],["邪鬼","地母神"],["地靈","地母神"],["邪龍","神獸"],["邪龍","龍神"],["邪龍","夜魔"],["幽鬼","邪龍"],["兇鳥","地母神"]],
 		"devils": [
 			{
@@ -1735,6 +1735,28 @@ export default [
 				"skill4": ["三段の強運","刹那五月雨撃ち","早手の舞い","千発千中","破魔吸収"],
 				"skill5": ["","スクカオート","リベリオート","無慈悲な一撃","緊縛無効"],
 				"elements": ["","nu","","","","rs",""],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
+				"id": "284",
+				"name": "トール【異世界】",
+				"names": {
+					"ja": "トール【異世界】",
+					"tw": "索爾【異世界】",
+					"en": "Thor A"
+				},
+				"rarity": 5,
+				"grade": 83,
+				"icon": "kisin_thorA.jpg",
+				"skills": ["三分の活泉","メギンギョルズ","雷神の戦鎚"],
+				"skill4": ["","ギガントマキア","タルカオート","電撃ハイブースタ","物理吸収"],
+				"skill5": ["","嗜虐の一撃","陽光の繁栄","千発千中","衝撃無効"],
+				"elements": ["nu","nu","","dr","wk","rs",""],
 				"type": "attack",
 				"fusion": false,
 				"fusionAsMaterial": true,
@@ -4394,6 +4416,28 @@ export default [
 				"formula": [],
 				"fusionMag": 0,
 				"source": "normal_fusion"
+			},
+			{
+				"id": "285",
+				"name": "スルト【異世界】",
+				"names": {
+					"ja": "スルト【異世界】",
+					"tw": "史爾特爾【異世界】",
+					"en": "Surt A"
+				},
+				"rarity": 5,
+				"grade": 83,
+				"icon": "maou_surtA.jpg",
+				"skills": ["火炎ハイブースタ","黄昏の焔","イラプション"],
+				"skill4": ["","トリスアギオン","コンセントレイト","威圧の構え","氷結反射"],
+				"skill5": ["","火炎エンハンス","大虐殺者","魔封無効","月影の衰退"],
+				"elements": ["nu","rp","wk","","","",""],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
 			},
 			{
 				"id": "247",
