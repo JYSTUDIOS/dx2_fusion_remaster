@@ -767,8 +767,11 @@ export default [
 					"en": "Ashura"
 				},
 				"descs": {
-					"ja": "敵全体にクリティカル率30%の物理属性の打撃型ダメージを威力50で与える。攻撃に成功した場合、敵全体のステータス強化効果を解除し、つぎの連動効果が発動する。ランダムな敵に10回、クリティカル率50%の物理属性の打撃型ダメージを威力25で与える。このスキルによるダメージは物理貫通を得る。",
-					"tw": "",
+					"ja": "敵全体にクリティカル率50%の物理属性の打撃型ダメージを威力50で与える。攻撃に成功した場合、敵全体のステータス強化効果を解除し、つぎの連動効果が発動する。ランダムな敵に10回、クリティカル率80%の物理属性の打撃型ダメージを威力25で与える。このスキルによるダメージは物理貫通を得る。",
+					"tw": "對敵方全體進行會心率50%的物理屬性的打擊型攻擊，以50威力給予傷害。\n" +
+						"攻擊若成功，解除全體敵人的能力強化效果，發動以下連鎖效果。\n" +
+						"「對隨機敵人進行10次會心率80%的物理屬性打擊型攻擊，以25威力給予傷害。」\n" +
+						"此技能的傷害會附加物理貫通。",
 					"en": "Inflicts Phys (Physical) damage (Power: 50) with 30% crit rate on all enemies. When an attack is successful, removes all stat buffs from all enemies and activates the following Chain Effect: Inflict Phys (Physical) damage (Power: 25) with 50% crit rate on random enemies 10 times. This skill will have Phys Pierce effect."
 				},
 				"mp": 8,
@@ -799,8 +802,18 @@ export default [
 					"en": "Violent Slash"
 				},
 				"descs": {
-					"ja": "強化段階 0：敵単体にクリティカル率30％の物理属性の打撃型ダメージを威力150で与える。強化段階 1：敵単体にクリティカル率50％の物理属性の打撃型ダメージを威力180で与える。さらに死亡時に踏みとどまるスキルを無視。強化段階 2：敵単体にクリティカル率80％の物理属性の打撃型ダメージを威力220で与える。さらに死亡時に踏みとどまるスキルを無視、反撃効果を無視。",
-					"tw": "",
+					"ja": "敵単体にクリティカル率30%の物理属性の打撃型ダメージを威力150で与える。\n" +
+						"このスキルを使用するたび強化段階が増加する。\n" +
+						"\n" +
+						"【強化段階：1】クリティカル率50%、威力180に変化、さらに死亡時に踏みとどまるスキル無視が追加\n" +
+						"【強化段階：2】クリティカル率80%、威力230に変化、さらに死亡時に踏みとどまるスキル無視が追加・反撃効果無視が追加\n" +
+						"\n",
+					"tw": "對敵方單體進行會心率30%的物理屬性打擊型攻擊，以150威力給予傷害。\n" +
+						"每當使用此技能，便會提升強化層級。\n" +
+						"\n" +
+						"【強化層級：1】變化為會心率50%，180威力，此外追加無視「死亡時發動強忍類技能」\n" +
+						"【強化層級：2】變化為會心率80%，230威力，此外追加無視「死亡時發動強忍類技能」及無視「反擊效果」\n" +
+						"\n",
 					"en": "This skill will gain 1 Boost level with each use in the battle. The increased boost level remains when this demon revives by skills or items, or all party members revive when losing the battle. Current Boost level can be confirmed by holding the skill icon in the battle."
 				},
 				"mp": 6,
@@ -863,8 +876,8 @@ export default [
 					"en": "Iron Judgement"
 				},
 				"descs": {
-					"ja": "敵単体にクリティカル率30％の物理貫通を得た物理属性の打撃型ダメージを威力150で与え、攻撃がヒットした敵を基礎確率50％で緊縛状態にする。",
-					"tw": "",
+					"ja": "敵単体にクリティカル率50％の物理貫通を得た物理属性の打撃型ダメージを威力150で与え、攻撃がヒットした敵を基礎確率50％で緊縛状態にする。",
+					"tw": "對敵方單體進行會心率50%，物理屬性附加物理貫通的打擊型攻擊，以150威力給予傷害。此攻擊命中的敵人會以80%的基礎機率陷入束縛狀態。",
 					"en": "Inflicts Phys (Physical) damage (Power: 150) with 30% crit rate on a single enemy and 50% chance to inflict Bind on hit enemies. This skill will have Phys Pierce effect."
 				},
 				"mp": 5,
@@ -879,8 +892,8 @@ export default [
 					"en": "Daylight Blade"
 				},
 				"descs": {
-					"ja": "敵単体にクリティカル率30％の貫通を得た物理属性の打撃型ダメージを威力120で与え、攻撃成功時、自身をコンセントレイト状態にし、次に与える魔法型ダメージを125％増加させる。",
-					"tw": "",
+					"ja": "敵単体にクリティカル率50％の貫通を得た物理属性の打撃型ダメージを威力130で与え、攻撃成功時、自身をコンセントレイト状態にし、次に与える魔法型ダメージを125％増加させる。",
+					"tw": "對敵方單體進行會心率50%附加物理貫通的物理屬性打擊型攻擊，以130威力給予傷害。攻擊若成功，自身會進入專注狀態，並使下次施放的魔法型傷害提升125%。",
 					"en": "Inflicts Phys (Physical) damage (Power: 120) with 30% crit rate on a single enemy and enters into a state of Concentrate if the attack is successful, increasing next Mag attack damage by 125%. This skill will have Phys Pierce effect."
 				},
 				"mp": 7,
@@ -1163,8 +1176,9 @@ export default [
 					"en": "Sunrise"
 				},
 				"descs": {
-					"ja": "敵全体に火炎貫通を得た火炎属性の魔法型ダメージを威力120で与える。攻撃成功時、死亡しているランダムな味方単体をHP25%で復活させる。",
-					"tw": "",
+					"ja": "敵全体に火炎貫通を得た火炎属性の魔法型ダメージを威力120で与える。攻撃成功時、死亡しているランダムな味方単体をHP50%で復活させる。",
+					"tw": "對敵方全體進行火炎屬性附加火炎貫通的魔法型攻擊，以120威力給予傷害。\n" +
+						"攻擊若成功，將會隨機讓1名我方已死亡的隊友復活並回復50%HP。",
 					"en": "Inflicts Fire (Magic) damage with Fire Pierce effect on all enemies. Revives an ally at random with 25% HP if the attack is successful. Power: 120"
 				},
 				"mp": 7,
@@ -1195,8 +1209,18 @@ export default [
 					"en": "Aztec Pulse"
 				},
 				"descs": {
-					"ja": "本スキルはバトルを終了するまで、使用する度に強化段階が増加します。スキルやアイテムによる蘇生、敗北からの復活時にも強化段階を継続します。現在の強化段階はバトル中のスキルアイコン長押しで確認できます。強化段階 0：敵全体に火炎属性の魔法型ダメージを威力100で与える。強化段階 1：威力120に変化。強化段階 2：威力140に変化、さらに「攻撃成功時、1ターンの間、敵全体の防御力を20％減少させる。」効果が追加",
-					"tw": "",
+					"ja": "敵全体に火炎属性の魔法型ダメージを威力100で与える。\n" +
+						"このスキルを使用するたび強化段階が増加する。\n" +
+						"\n" +
+						"【強化段階：1】威力120に変化\n" +
+						"【強化段階：2】威力140に変化、さらに「攻撃成功時、3ターンの間、敵全体の防御力を20%減少させる。」効果が追加\n" +
+						"\n",
+					"tw": "對敵方全體進行火炎屬性的魔法型攻擊，以100威力給予傷害。\n" +
+						"每當使用此技能，便會提升強化層級。\n" +
+						"\n" +
+						"【強化層級：1】變化為120威力\n" +
+						"【強化層級：2】變化為140威力，此外追加「攻擊成功時，3回合內使敵人全體防禦力減少20%」效果。\n" +
+						"\n",
 					"en": "This skill will gain 1 Boost level with each use in the battle. The increased boost level remains when this demon revives by skills or items, or all party members revive when losing the battle.Current Boost level can be confirmed by holding the skill icon in the battle.Boost Level 0: Inflicts Fire (Magic) damage (power: 100) on all enemies.Boost Level 1: Increases Power to 120.Boost Level 2: Increases Power to 140. Reduces DEF of all enemies by 20% when attack is successful. (1 turn)"
 				},
 				"mp": 6,
@@ -1260,7 +1284,10 @@ export default [
 				},
 				"descs": {
 					"ja": "敵単体にクリティカル率50%の貫通を得た火炎属性の打撃型ダメージを威力150で与える。このスキルによるダメージは魔法攻撃力に依存する。このスキルはクリティカル・ミスが発生する場合がある。このスキルは死亡時にふみとどまるスキルを無視する。",
-					"tw": "",
+					"tw": "對敵方單體進行會心率50%，火炎屬性附加貫通的打擊型攻擊，以150威力給予傷害，以10%機率使對象即死。\n" +
+						"此技能造成的傷害取決於魔法攻擊力。\n" +
+						"此技能可能會發生會心或落空。\n" +
+						"敵人若因此技能死亡，死亡時不會發動強忍類技能。",
 					"en": "Inflicts Fire (Physical) Pierce effect damage (Power: 150) with 50% crit rate on a single enemy.*The damage inflicted by this skill is dependent on Mag ATK.*This skill has a chance of having a Critical effect or a Miss which are dependent on their respective rates.*Nullifies all death prevention skills."
 				},
 				"mp": 6,
@@ -1763,8 +1790,8 @@ export default [
 					"en": "Glorious Bolt"
 				},
 				"descs": {
-					"ja": "敵単体に電撃貫通を得た電撃属性の魔法型ダメージを威力160で与える。攻撃成功時、味方全体のMPを1回復する。",
-					"tw": "",
+					"ja": "敵単体に電撃貫通を得た電撃属性の魔法型ダメージを威力170で与える。攻撃成功時、味方全体のMPを1回復する。",
+					"tw": "對敵方單體進行電擊屬性附加電擊貫通的魔法型攻擊，以170威力給予傷害。攻擊若成功，我方全體的MP回復1。",
 					"en": "Inflicts Elec (Magic) damage (Power: 160) with Elec Pierce effect on a single enemy. All party members recover 1 MP if attack is successful."
 				},
 				"mp": 6,
@@ -1965,8 +1992,9 @@ export default [
 					"en": "Tailwind"
 				},
 				"descs": {
-					"ja": "ランダムな敵に4回、衝撃貫通を得た衝撃属性の魔法型ダメージを威力45で与える。攻撃成功時、死亡しているランダムな味方単体をHP25%で復活させる。(回数制限:6回)",
-					"tw": "",
+					"ja": "ランダムな敵に4回、衝撃貫通を得た衝撃属性の魔法型ダメージを威力50で与える。攻撃成功時、死亡しているランダムな味方単体をHP50%で復活させる。(回数制限:6回)",
+					"tw": "對隨機敵人進行4次衝擊屬性附加衝擊貫通的魔法型攻擊，以50威力給予傷害。\n" +
+						"攻擊若成功，將會隨機讓1名我方已死亡的隊友復活並回復50%HP。(回数制限:6回)",
 					"en": "Inflicts Force (Magic) damage 4 times with Force Pierce effect on random enemy/ies. Revives an ally at random with 25% HP if the attack is successful."
 				},
 				"mp": 6,
@@ -2215,8 +2243,9 @@ export default [
 					"en": "Ascension"
 				},
 				"descs": {
-					"ja": "敵単体に破魔貫通を得た破魔属性の魔法型ダメージを威力160で与える。攻撃成功時、死亡しているランダムな味方単体をHP25%で復活させる。",
-					"tw": "",
+					"ja": "敵単体に破魔貫通を得た破魔属性の魔法型ダメージを威力160で与える。攻撃成功時、死亡しているランダムな味方単体をHP50%で復活させる。",
+					"tw": "對敵方單體進行破魔屬性附加破魔貫通的魔法型攻擊，以160威力給予傷害。\n" +
+						"攻擊若成功，將會隨機讓1名我方已死亡的隊友復活並回復50%HP。",
 					"en": "Inflicts Light (Magic) damage with Light Pierce effect on a single enemy. Revives an ally at random with 25% HP if the attack is successful."
 				},
 				"mp": 6,
@@ -2497,8 +2526,14 @@ export default [
 					"en": "Temptation"
 				},
 				"descs": {
-					"ja": "敵単体に呪殺属性の打撃型ダメージを威力130で与え、攻撃成功時、敵全体を基礎確率50%で魅了状態にする。このスキルによるダメージは魔法攻撃力に依存し、死亡時にふみとどまるスキルを無視する。このスキルはクリティカル・ミスが発生する場合がある。このスキルで敵を死亡させた場合、その敵は復活が出来なくなる。",
-					"tw": "對敵方單體進行咒殺屬性的打擊型攻擊，以130威力給予傷害，攻擊若成功，以50%的基礎機率對敵方全體附加魅惑狀態。此技能造成的傷害取決於魔法攻擊力，敵人若因此技能死亡，死亡時不會發動強忍類技能。此技能可能會發生會心或落空。因此技能死亡的敵人無法復活。",
+					"ja": "敵単体にクリティカル率30%の呪殺属性の打撃型ダメージを威力135で与え、攻撃成功時、敵全体を基礎確率50%で魅了状態にする。\n" +
+						"このスキルによるダメージは魔法攻撃力に依存し、死亡時にふみとどまるスキルを無視する。\n" +
+						"このスキルはクリティカル・ミスが発生する場合がある。\n" +
+						"このスキルで敵を死亡させた場合、その敵は復活が出来なくなる。",
+					"tw": "對敵方單體進行會心率30%的咒殺屬性打擊型攻擊，以135威力給予傷害，攻擊若成功，以50%的基礎機率對敵方全體附加魅惑狀態。\n" +
+						"此技能造成的傷害取決於魔法攻擊力，敵人若因此技能死亡，死亡時不會發動強忍類技能。\n" +
+						"此技能可能會發生會心或落空。\n" +
+						"因此技能死亡的敵人無法復活。",
 					"en": "Inflicts Dark (Physical) damage (Power: 130) on a single enemy with 50% chance to inflict Charm on all enemies if the attack is successful.*The damage inflicted by this skill is dependent on Mag ATK.*Nullifies all death prevention skills.*This skill has a chance of having a Critical effect or a Miss which are dependent on their respective rates.*Enemies downed by this skill will not be able to revive."
 				},
 				"mp": 6,
@@ -2747,9 +2782,9 @@ export default [
 					"en": "Apocalypse"
 				},
 				"descs": {
-					"ja": "敵全体に万能属性の魔法型ダメージを威力120で与え、基礎確率40％で魔封状態にする。",
-					"tw": "",
-					"en": "Inflicts Magic Almighty damage with 110 power on All Enemies with 30% chance to inflict Mute."
+					"ja": "敵全体に万能属性の魔法型ダメージを威力120で与え、基礎確率60％で魔封状態にする。",
+					"tw": "對敵方全體進行萬能屬性的魔法型攻擊，以120威力給予傷害，並以60%的基礎機率附加魔封狀態。",
+					"en": "Inflicts Magic Almighty damage with 110 power on All Enemies with 60% chance to inflict Mute."
 				},
 				"mp": 7,
 				"point": null,
@@ -2955,8 +2990,12 @@ export default [
 					"en": "Slaughter All"
 				},
 				"descs": {
-					"ja": "敵単体にクリティカル率30%の万能属性の打撃型ダメージを威力210で与える。このスキルによるダメージは物理攻撃力に依存し、死亡時にふみとどまるスキルを無視する。このスキルはクリティカル・ミスが発生する場合がある。",
-					"tw": "",
+					"ja": "敵単体にクリティカル率50%の万能属性の打撃型ダメージを威力210で与える。\n" +
+						"このスキルによるダメージは物理攻撃力に依存し、死亡時にふみとどまるスキル・反撃効果を無視する。\n" +
+						"このスキルはクリティカル・ミスが発生する場合がある。",
+					"tw": "\t對敵方單體進行會心率50%的萬能屬性打擊型攻擊，以210威力給予傷害。\n" +
+						"此技能造成的傷害取決於物理攻擊力，並無視反擊效果。敵人若因此技能死亡，死亡時不會發動強忍類技能。\n" +
+						"此技能可能會發生會心或落空。",
 					"en": "Inflicts Almighty (Physical) damage (Power: 210) with 30% crit rate on a single enemy. *The damage inflicted by this skill is dependent on Phys ATK. *Nullifies all death prevention skills. *This skill has a chance of having a Critical effect or a Miss which are dependent on their respective rates."
 				},
 				"mp": 7,
@@ -4912,7 +4951,23 @@ export default [
 				"mp": 8,
 				"point": null,
 				"element": "無"
-			}
+			},
+			{
+				"name": "バビロニアの疫病",
+				"names": {
+					"ja": "バビロニアの疫病",
+					"tw": "巴比倫尼亞疫病",
+					"en": "Plague of Babylon"
+				},
+				"descs": {
+					"ja": "敵全体のバリア状態を解除した後、敵全体を基礎確率100%で虚弱状態にする。",
+					"tw": "解除敵方全體的防壁狀態後，以100%的基礎機率使敵方全體陷入虛弱狀態。",
+					"en": "100% chance to inflict Weak on all enemies after removing Barriers from all enemies."
+				},
+				"mp": 5,
+				"point": null,
+				"element": "無"
+			},
 		]
 	},
 	{
@@ -5315,9 +5370,9 @@ export default [
 					"en": "Superior Power"
 				},
 				"descs": {
-					"ja": "物理命中率が20%増加し、物理貫通を得る。",
-					"tw": "",
-					"en": "+20% to Phys hit rate and adds Phys Pierce."
+					"ja": "物理命中率が30%増加し、物理貫通を得る。",
+					"tw": "物理命中率提升30%，附著物理貫通。",
+					"en": "+30% to Phys hit rate and adds Phys Pierce."
 				},
 				"mp": null,
 				"point": null,
@@ -6285,9 +6340,9 @@ export default [
 					"en": "Vahana"
 				},
 				"descs": {
-					"ja": "物理回避率15%増加。状態異常になる確率を30%減少。",
-					"tw": "",
-					"en": "+15% to Phys evasion rate. -30% chance of receiving status ailments."
+					"ja": "物理回避率20%増加。状態異常になる確率を50%減少。",
+					"tw": "物理迴避率提升20%，陷入異常狀態的機率減少50%。",
+					"en": "+20% to Phys evasion rate. -50% chance of receiving status ailments."
 				},
 				"mp": null,
 				"point": null,
@@ -7207,9 +7262,9 @@ export default [
 					"en": "Arms Mastery"
 				},
 				"descs": {
-					"ja": "物理属性で与えるダメージが15％増加し、物理命中率も15％増加する。",
-					"tw": "",
-					"en": "+15% to Phys damage and Phys hit rate."
+					"ja": "物理属性で与えるダメージが20％増加し、物理命中率も20％増加する。",
+					"tw": "物理屬性的傷害提升20%，物理命中率也提升20%。",
+					"en": "+20% to Phys damage and Phys hit rate."
 				},
 				"mp": null,
 				"point": null,
@@ -7313,9 +7368,10 @@ export default [
 					"en": "Yaxche"
 				},
 				"descs": {
-					"ja": "このスキルを持っている悪魔が敵ターンに死亡したとき、攻撃してきた相手に万能属性の魔法型ダメージを威力100で与え、死亡時に踏みとどまるスキルを無視して100%の確率で即死させる。ただし、全滅時にはこの効果は発動しない。",
-					"tw": "",
-					"en": "When downed during the enemy turn, inflicts Almighty (Power:100) damage to the attacker, with 100% chance to inflict Mortal. Nullifies all death prevention skills. Won't activate when your party is wiped out."
+					"ja": "このスキルを持っている悪魔が敵ターンに死亡したとき、攻撃してきた相手に万能属性の魔法型ダメージを威力120で与え、死亡時に踏みとどまるスキルを無視して100%の確率で即死させる。ただし、全滅時にはこの効果は発動しない。",
+					"tw": "擁有此技能的惡魔在敵方回合死亡時，會發動以下的連鎖效果。\n" +
+						"「對攻擊自己的敵人進行萬能屬性的魔法型攻擊，以120威力給予傷害，並以100%機率使對象即死。敵人若因此技能死亡，死亡時不會發動強忍類技能。」但我方隊伍全滅時不會發動此技能。",
+					"en": "When downed during the enemy turn, inflicts Almighty (Power:120) damage to the attacker, with 100% chance to inflict Mortal. Nullifies all death prevention skills. Won't activate when your party is wiped out."
 				},
 				"mp": null,
 				"point": null,
@@ -7834,22 +7890,6 @@ export default [
 				"element": "パシップ"
 			},
 			{
-				"name": "バビロニアの疫病",
-				"names": {
-					"ja": "バビロニアの疫病",
-					"tw": "巴比倫尼亞疫病",
-					"en": "Plague of Babylon"
-				},
-				"descs": {
-					"ja": "敵全体のバリア状態を解除した後、敵全体を基礎確率80%で虚弱状態にする。",
-					"tw": "",
-					"en": "80% chance to inflict Weak on all enemies after removing Barriers from all enemies."
-				},
-				"mp": null,
-				"point": null,
-				"element": "パシップ"
-			},
-			{
 				"name": "冥府の理",
 				"names": {
 					"ja": "冥府の理",
@@ -8161,8 +8201,10 @@ export default [
 					"en": "Enma's Judgement"
 				},
 				"descs": {
-					"ja": "1ターン目開始時、次の連動効果が発動する。｢3ターンの間、味方全体をスキルによる即死無効状態にする。」",
-					"tw": "",
+					"ja": "1ターン目開始時、次の連動効果が発動する。\n" +
+						"「6ターンの間、味方全体をスキルによる即死無効状態にし、6ターンの間、味方全体の攻撃力・防御力をそれぞれ20%ずつ増加させる。」",
+					"tw": "第1回合開始時，會發動以下連鎖效果。\n" +
+						"「6回合內使我方全體附加即死技能無效狀態，6回合內使我方全體的攻擊力、防禦力各提升20%。」",
 					"en": "Activates the following Chain Effect at the beginning of the 1st turn: All allies will Null Mortal. (3 turns)"
 				},
 				"mp": null,
@@ -8177,8 +8219,14 @@ export default [
 					"en": "Lord of Clouds"
 				},
 				"descs": {
-					"ja": "電撃貫通を得る。 このスキルを持っている悪魔が敵を倒したとき、次の連動効果が発動する。「自身のMPを3回復し、1ターンの間、味方全体を1度だけ万能を含む魔法がダメージを反射する状態にする。」",
-					"tw": "",
+					"ja": "電撃貫通を得る。\n" +
+						"自身のバトルスピードへの影響が20%増加する。\n" +
+						"このスキルを持っている悪魔が敵を倒したとき、次の連動効果が発動する。\n" +
+						"「自身のMPを3回復し、1ターンの間、味方全体を1度だけ万能を含む魔法型ダメージを反射する状態にする。」",
+					"tw": "附著電擊貫通。\n" +
+						"對自身戰鬥速度的影響提升20%\n" +
+						"擁有此技能的惡魔擊敗敵人時，會發動以下連鎖效果。\n" +
+						"「自身的MP回復3，1回合內為我方全體附加1次反射魔法型傷害(含萬能魔法)的狀態。」",
 					"en": "Activates the following Chain Effect when the demon with this skill downs an enemy: Recovers 3 MP and casts Repel Magic (including Almighty) effect on all allies. (1 turn)"
 				},
 				"mp": null,
@@ -8193,8 +8241,10 @@ export default [
 					"en": "The Great Darkness"
 				},
 				"descs": {
-					"ja": "火炎貫通を得る。3ターンごとの自分のターン開始時、次の連動効果が発動する。｢ランダムな敵に5回、火炎属性の魔法型ダメージを威力40で与える。攻撃に成功した場合、自身をコンセントレイト状態にし、次に与える魔法型ダメージを125%増加させる。」",
-					"tw": "",
+					"ja": "火炎貫通を得る。2ターンごとの自分のターン開始時、次の連動効果が発動する。｢ランダムな敵に5回、火炎属性の魔法型ダメージを威力40で与える。攻撃に成功した場合、自身をコンセントレイト状態にし、次に与える魔法型ダメージを125%増加させる。」",
+					"tw": "附著火炎貫通。\n" +
+						"每2回合，當自己的回合開始時，發動以下連鎖效果。\n" +
+						"「對隨機敵人進行5次火炎屬性的魔法型攻擊，以40威力給予傷害。攻擊若成功，自身會進入專注狀態，並使下次施放的魔法型傷害提升125%。」",
 					"en": "Adds Fire Pierce. Activates the following Chain Effect at the beginning of every third turn. Inflicts Fire (Magic) damage 5 times (Power: 40) on random enemies. Enters into a state of Concentrate, increasing next Mag attack damage by 125% if the attack is successful."
 				},
 				"mp": null,
@@ -8241,8 +8291,10 @@ export default [
 					"en": "God's Blessing"
 				},
 				"descs": {
-					"ja": "常時、衝撃属性・破魔属性の与ダメージが10%増加。味方パーティに種族｢天使」｢大天使」の悪魔が3体以上生存時、自分のターン開始時に次の連動効果が発動。｢味方全体を回復力70で回復し、1ターンの間、味方全体の防御力を20%増加させる。」",
-					"tw": "",
+					"ja": "常時、衝撃属性・破魔属性の与ダメージが10%増加。味方パーティに種族｢天使」｢大天使」の悪魔が3体以上生存時、自分のターン開始時に次の連動効果が発動。｢味方全体を回復力90で回復し、1ターンの間、味方全体の防御力を20%増加させる。」",
+					"tw": "衝擊屬性、破魔屬性給予的傷害隨時提升10%。\n" +
+						"我方隊伍內若有3隻以上的「天使」「大天使」種族存活，自己的回合開始時會發動以下連鎖效果。\n" +
+						"「以90回復力回復我方全體，1回合內使我方全體的防禦力提升20%。」",
 					"en": "Increases all Force and Light damage by 10%. When there are 3 or more Divine or Herald demons alive in your party, activates the following Chain Effect at the beginning of own turn: Heals all party members (Power: 70) and increases their DEF by 20%. (1 turn)"
 				},
 				"mp": null,
@@ -8369,8 +8421,9 @@ export default [
 					"en": "Plague"
 				},
 				"descs": {
-					"ja": "自ターン終了時、次の連動効果が発動する。 「敵全体に、対象の現在HPの10%の割合ダメージ(最大200ダメージ)を与え、敵全体を基礎確率70%で毒状態にする。割合ダメージは、ダメージ増減効果やステータス強化弱体化などの影響を受けない。」",
-					"tw": "",
+					"ja": "自ターン終了時、次の連動効果が発動する。 「敵全体に、対象の現在HPの10%の割合ダメージ(最大200ダメージ)を与え、敵全体を基礎確率100%で毒状態にする。割合ダメージは、ダメージ増減効果やステータス強化弱体化などの影響を受けない。」",
+					"tw": "自己的回合結束後，發動以下連鎖效果。\n" +
+						"「對敵方全體造成現有HP的10%比例傷害，以100%的基礎機率使敵方全體陷入中毒狀態。（最大200傷害）",
 					"en": "Activates the following Chain Effect at the end of own turn: Inflicts 10% fractional damage (200 max) on all enemies based on their current HP, with a 70% chance to inflict Poison. Fractional damage will not be affected by stat/damage increase or reduction effects."
 				},
 				"mp": null,
@@ -8401,8 +8454,9 @@ export default [
 					"en": "Famine"
 				},
 				"descs": {
-					"ja": "敵ターン終了時、次の連動効果が発動する。 「敵全体に、対象の最大HPの10%の割合ダメージ(最大300ダメージ)を与え、敵のMPを2失わせる。割合ダメージは、ダメージ増減効果やステータス強化弱体化などの影響を受けない。」",
-					"tw": "",
+					"ja": "敵ターン終了時、次の連動効果が発動する。 「敵全体に、対象の最大HPの15%の割合ダメージ(最大300ダメージ)を与え、敵のMPを2失わせる。割合ダメージは、ダメージ増減効果やステータス強化弱体化などの影響を受けない。」",
+					"tw": "敵方回合結束時，會發動以下連鎖效果。\n" +
+						"「對敵方全體造成HP最大值的15%比例傷害，使敵方全體失去2MP。（最大300傷害）",
 					"en": "Activates the following Chain Effect at the end of an enemy turn: Inflicts 10% fractional damage (300 max) on all enemies based on their max HP and reduces their MP by 2. Fractional damage will not be affected by stat/damage increase or reduction effects."
 				},
 				"mp": null,
@@ -8433,8 +8487,9 @@ export default [
 					"en": "Bloodshed"
 				},
 				"descs": {
-					"ja": "テラーソード発動後、次の連動効果が発動する。 「敵全体に、クリティカル率50%の物理属性の打撃型ダメージを威力80で与える。このスキルは反撃効果の発動を無視する。」",
-					"tw": "",
+					"ja": "テラーソード発動後、次の連動効果が発動する。 「敵全体に、クリティカル率50%の物理貫通の打撃型ダメージを威力80で与える。このスキルは反撃効果の発動を無視する。」",
+					"tw": "發動「恐懼之劍」後，會發動以下連鎖效果。\n" +
+						"「對敵方全體進行會心率50%，物理屬性附加貫通的打擊型攻擊，以80威力給予傷害。」此技能將無視反擊效果的發動。」",
 					"en": "Activates the following Chain Effect after Blade of Terror is activated: Inflicts Phys (Physical) damage (power: 80) with 50% crit rate on all enemies. Counter effects will not work on this skill."
 				},
 				"mp": null,
@@ -8513,8 +8568,12 @@ export default [
 					"en": "Heavenly Valor"
 				},
 				"descs": {
-					"ja": "物理貫通を得る。敵がパスを使用したとき、次の連動効果が発動。「敵全体にクリティカル率30％の物理属性の打撃型ダメージを威力85で与える。」",
-					"tw": "",
+					"ja": "物理貫通を得る。\n" +
+						"敵がパスを使用したとき、次の連動効果が発動。\n" +
+						"「敵全体にクリティカル率50%の物理属性の打撃型ダメージを威力85で与える。反撃効果の発動を無視する。」",
+					"tw": "附著物理貫通。\n" +
+						"敵人使用PASS時，會發動以下連鎖效果。\n" +
+						"「對敵方全體進行會心率50%的物理屬性打擊型攻擊，以85威力給予傷害。無視反擊效果的發動。」",
 					"en": "Adds Phys Pierce. Activates the following Chain Effect when the enemy uses Pass: Inflicts Phys (Physical) damage with 30% crit rate on all enemies."
 				},
 				"mp": null,
@@ -8529,8 +8588,17 @@ export default [
 					"en": "Brilliant Wings"
 				},
 				"descs": {
-					"ja": "衝撃貫通を得る。自身を含む味方が打撃型攻撃を回避したとき、次の連動効果が発動。「敵全体に衝撃属性の魔法型ダメージを威力70で与える。攻撃成功時、2ターンの間、敵全体の回避と命中を20％減少させる。」",
-					"tw": "",
+					"ja": "速：220（最大値）\n" +
+						"\n" +
+						"衝撃貫通を得る。\n" +
+						"自身を含む味方が打撃型攻撃を回避したとき、次の連動効果が発動。\n" +
+						"「敵全体に衝撃属性の魔法型ダメージを威力80で与える。攻撃成功時、2ターンの間、敵全体の回避と命中を20%減少させる。」\n" +
+						"\n",
+					"tw": "速：220（最大值）\n" +
+						"\n" +
+						"附著衝擊貫通。\n" +
+						"當我方成員（包含自己）迴避打擊型攻擊時，會發動以下連鎖效果。\n" +
+						"「對敵方全體進行衝擊屬性的魔法型攻擊，以80威力給予傷害。攻擊成功時，2回合內敵方全體的迴避/命中減少20%。」",
 					"en": "Adds Force Pierce. Activates the following Chain Effect when a member of your party evades a Physical attack: Inflicts Force (Magic) damage on all enemies. Reduces EV/AC of all enemies by 20% if the attack is successful. (2 turns) Power: 70"
 				},
 				"mp": null,
@@ -8980,8 +9048,10 @@ export default [
 					"en": "Illusionary World"
 				},
 				"descs": {
-					"ja": "状態異常にする確率が15％増加する。自身を含む味方が魔封状態になったとき、次の連動効果が発動。「味方全体を魔封状態から回復した後、敵全体に万能属性の魔法型ダメージを威力80で与える。」",
-					"tw": "",
+					"ja": "状態異常にする確率が15％増加する。自身を含む味方が魔封状態になったとき、次の連動効果が発動。「味方全体を魔封状態から回復した後、敵全体に万能属性の魔法型ダメージを威力90で与える。」",
+					"tw": "附著異常狀態的機率提升15%。\n" +
+						"當我方成員(包含自己)陷入魔封狀態時，會發動以下連鎖效果。\n" +
+						"「解除我方全體的魔封狀態後，對敵方全體進行萬能屬性的魔法型攻擊，以90威力給予傷害。」",
 					"en": "+15% chance to inflict status ailments.Activates the following Chain Effect when a party member (including self) is Muted:Cures all party members of Mute, then inflicts Almighty (Magic) damage (Power: 80) on all enemies."
 				},
 				"mp": null,
@@ -8996,8 +9066,9 @@ export default [
 					"en": "Glamorous Allure"
 				},
 				"descs": {
-					"ja": "アタック（通常攻撃）が次の効果になる。「敵全体に万能属性の魔法型ダメージを威力60で与え、攻撃がヒットした敵を基礎確率20％で魅了状態にする。」",
-					"tw": "",
+					"ja": "アタック（通常攻撃）が次の効果になる。「敵全体に万能属性の魔法型ダメージを威力70で与え、攻撃がヒットした敵を基礎確率20％で魅了状態にする。」",
+					"tw": "攻擊(一般攻擊)有以下效果。\n" +
+						"「對敵方全體進行萬能屬性的魔法型攻擊，以70威力給予傷害，被命中的敵人會以20%的基礎機率陷入魅惑狀態。」",
 					"en": "The effect of normal Attacks will be changed to the following:Inflicts Almighty (Magic) damage (Power: 60) on all enemies with 20% chance to inflict Charm on hit enemies."
 				},
 				"mp": null,
@@ -9060,8 +9131,10 @@ export default [
 					"en": "God's Grace"
 				},
 				"descs": {
-					"ja": "常時、自身の電撃属性・破魔属性の与ダメージが10％増加。味方パーティに種族「天使」「大天使」の悪魔が3体以上生存時、敵ターン開始時に次の連動効果が発動。「味方全体のMPを1回復し、1ターンの間、味方全体を1度だけ万能を含む魔法型ダメージを反射する状態にする。」",
-					"tw": "",
+					"ja": "常時、自身の電撃属性・破魔属性の与ダメージが10％増加。味方パーティに種族「天使」「大天使」の悪魔が3体以上生存時、敵ターン開始時に次の連動効果が発動。「味方全体のMPを2回復し、1ターンの間、味方全体を1度だけ万能を含む魔法型ダメージを反射する状態にする。」",
+					"tw": "自身的電擊屬性、破魔屬性給予的傷害隨時提升10%。\n" +
+						"我方隊伍內若有3隻以上的「天使」「大天使」種族存活，敵方回合開始時會發動以下連鎖效果。\n" +
+						"「我方全體的MP回復2，1回合內為我方全體附加1次反射魔法型傷害(含萬能魔法)的狀態。」",
 					"en": "Increases all Elec and Light damage by 10%.When there are 3 or more Divine or Herald demons alive in your party, activates the following Chain Effect at the beginning of enemy turn:All party members recover 1 MP, casts Repel Magic (including Almighty) effect on all allies. (1 time only effect for 1 turn)"
 				},
 				"mp": null,
@@ -9076,8 +9149,10 @@ export default [
 					"en": "Fallen Grigori"
 				},
 				"descs": {
-					"ja": "自身が死亡するとき、一度だけHPが300回復して踏みとどまる。自ターン終了時、自身のHPが50%以下のとき、次の連動効果が発動。「自身のHPを30%回復、MPを3回復し、自身を会心状態にする。」",
-					"tw": "",
+					"ja": "自身が死亡するとき、一度だけHPが300回復して踏みとどまる。自ターン終了時、自身のHPが80%以下のとき、次の連動効果が発動。「自身のHPを30%回復、MPを3回復し、自身を会心状態にする。」",
+					"tw": "自身死亡時，僅有一次機會可回復300HP存活。\n" +
+						"自身回合結束時，當自身HP在80%以下時，發動以下連鎖效果。\n" +
+						"「自身回復30%HP及3MP，並附著會心狀態。」",
 					"en": "Heals 300 HP upon receiving the first killing blow.Activates the following Chain Effect at the end of own turn when own HP is at 50% or lower:Heals 30% of own HP, recovers 3MP and enters a state of Might."
 				},
 				"mp": null,
@@ -9108,8 +9183,20 @@ export default [
 					"en": "Black Beckoning"
 				},
 				"descs": {
-					"ja": "自ターン終了時、連動効果が発動「敵全体に対象の現在HPの10%の割合ダメージ（最大200）」自ターン開始時、強化段階が1増加する。",
-					"tw": "",
+					"ja": "自ターン終了時、連動効果が発動\n" +
+						"「敵全体に対象の現在HPの10%の割合ダメージ（最大200）」\n" +
+						"自ターン開始時、強化段階が1増加する。\n" +
+						"\n" +
+						"【強化段階：1】初期段階と同じ効果\n" +
+						"【強化段階：2】現在HPの50%の割合ダメージ（最大1,000）に変化\n" +
+						"【強化段階：3】最大HPの50%の割合ダメージ（最大2,000）に変化、さらに死亡時に踏みとどまるスキル無視が追加、回数制限：1",
+					"tw": "自身回合結束時，發動連鎖效果\n" +
+						"「對敵方全體造成現有HP的10%比例傷害(最大200)」\n" +
+						"自身回合開始時，強化層級提升1。\n" +
+						"\n" +
+						"【強化層級：1】與起始層級效果相同。\n" +
+						"【強化層級：2】變化為現有HP的50%比例傷害(最大1.000)。\n" +
+						"【強化層級：3】變化為HP上限的50%比例傷害(最大2.000)，此外追加無視「死亡時發動強忍類技能」，次數限制：1",
 					"en": "Activates the following Chain Effect at the end of own turn:Inflicts 10% fractional damage (200 max) on all enemies based on their current HP.This skill will gain 1 Boost level at the start of own turn."
 				},
 				"mp": null,
