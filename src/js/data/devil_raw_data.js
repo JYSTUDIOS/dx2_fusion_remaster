@@ -2049,6 +2049,28 @@ export default [
 		"formulas": [["幻魔","聖獸"],["鬼神","幻魔"],["墮天使","幻魔"],["邪神","靈鳥"],["邪神","聖獸"],["妖獸","幻魔"],["外道","夜魔"],["外道","破壞神"],["魔王","幻魔"],["地靈","靈鳥"],["地靈","魔獸"],["夜魔","邪鬼"]],
 		"devils": [
 			{
+				"id": "281",
+				"name": "マスターテリオン",
+				"names": {
+					"ja": "マスターテリオン",
+					"tw": "啟示錄之獸",
+					"en": "Master Therion"
+				},
+				"rarity": 5,
+				"grade": 82,
+				"icon": "majuu_mastertherion.jpg",
+				"skills": ["魔封無効","獣の烙印","ブラスフェミー"],
+				"skill4": ["","マハブフダイン","マハシバブー","狂乱の権化","火炎吸収"],
+				"skill5": ["","四源相生","狂い咲き","マハラギダイン","破魔無効"],
+				"elements": ["","nu","dr","","","wk","rs"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
 				"id": "67",
 				"name": "ガネーシャ",
 				"names": {

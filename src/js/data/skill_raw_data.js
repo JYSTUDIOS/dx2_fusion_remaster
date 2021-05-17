@@ -936,6 +936,22 @@ export default [
 				"mp": 6,
 				"point": null,
 				"element": "物理"
+			},
+			{
+				"name": "引きちぎり",
+				"names": {
+					"ja": "引きちぎり",
+					"tw": "撕扯之力",
+					"en": "Rip"
+				},
+				"descs": {
+					"ja": "敵全体にクリティカル率30％の貫通を得た物理属性の打撃型ダメージを威力110で与え、そのダメージの50％分、自身を回復する。",
+					"tw": "對敵方全體進行會心率30%，物理屬性附加貫通的打擊型攻擊，以110威力給予傷害，利用其中50％的傷害為自身回復。",
+					"en": ""
+				},
+				"mp": 7,
+				"point": null,
+				"element": "物理"
 			}
 		]
 	},
@@ -1264,6 +1280,26 @@ export default [
 					"en": "Inflicts Fire (Physical) Pierce effect damage (Power: 80) with 30% crit rate on all enemies.*The damage inflicted by this skill is dependent on Phys ATK.*This skill has a chance of having a Critical effect or a Miss which are dependent on their respective rates.*Counter effects will not work on this skill."
 				},
 				"mp": 5,
+				"point": null,
+				"element": "火炎"
+			},
+			{
+				"name": "ブラスフェミー",
+				"names": {
+					"ja": "ブラスフェミー",
+					"tw": "褻瀆之言",
+					"en": "Blasphemy"
+				},
+				"descs": {
+					"ja": "敵単体に火炎属性または氷結属性の魔法型ダメージを威力160で与え、攻撃成功時、敵全体を基礎確率40%で毒状態・魅了状態にする。\n" +
+						"属性は状況によって自動で選択される。\n" +
+						"このスキルによるダメージは属性貫通を得る。",
+					"tw": "對敵方單體進行火炎屬性或冰凍屬性的魔法型攻擊，以160威力給予傷害，攻擊若成功，以40%的基礎機率對敵方全體附加中毒/魅惑狀態。\n" +
+						"會依狀況自動選擇屬性。\n" +
+						"此技能造成的傷害附加屬性貫通。",
+					"en": ""
+				},
+				"mp": 6,
 				"point": null,
 				"element": "火炎"
 			}
@@ -9361,15 +9397,19 @@ export default [
 				"element": "パシップ"
 			},
 			{
-				"name": "引きちぎり",
+				"name": "獣の烙印",
 				"names": {
-					"ja": "引きちぎり",
-					"tw": "撕扯之力",
-					"en": "Rip"
+					"ja": "獣の烙印",
+					"tw": "野獸烙印",
+					"en": "Mark of the Beast"
 				},
 				"descs": {
-					"ja": "敵全体にクリティカル率30％の貫通を得た物理属性の打撃型ダメージを威力110で与え、そのダメージの50％分、自身を回復する。",
-					"tw": "對敵方全體進行會心率30%，物理屬性附加貫通的打擊型攻擊，以110威力給予傷害，利用其中50％的傷害為自身回復。",
+					"ja": "自ターン終了時、次の連動効果が発動。\n" +
+						"「全ての毒状態の敵を基礎確率66%で魔封状態にする。」\n" +
+						"「全ての魅了状態の敵に666の固定ダメージを与える。このスキルによるダメージは死亡時にふみとどまるスキルを無視する。」",
+					"tw": "自己的回合結束後，發動以下連鎖效果。\n" +
+						"「對所有中毒狀態的敵人以66%的基礎機率附加魔封狀態。」\n" +
+						"「對所有魅惑狀態的敵人造成666的固定傷害。若敵人因此技能造成的傷害死亡，死亡時不會發動強忍類技能。」",
 					"en": ""
 				},
 				"mp": null,
