@@ -669,6 +669,28 @@ export default [
 				"source": "multi_fusion"
 			},
 			{
+				"id": "286",
+				"name": "マハーマユリ",
+				"names": {
+					"ja": "マハーマユリ",
+					"tw": "孔雀明王",
+					"en": "Mahamayuri"
+				},
+				"rarity": 5,
+				"grade": 85,
+				"icon": "masin_mahamayuri.jpg",
+				"skills": ["衝撃ハイブースタ","孔雀明王","慈愛の旋風"],
+				"skill4": ["","マハザンダイン","ラスタキャンディ","大暗殺者","電撃無効"],
+				"skill5": ["","衝撃エンハンス","強壮の権化","寸分の見切り","不屈の闘志"],
+				"elements": ["","rs","","wk","rp","nu",""],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
 				"id": "248",
 				"name": "アタバク",
 				"names": {
@@ -3782,6 +3804,28 @@ export default [
 				"source": "normal_fusion"
 			},
 			{
+				"id": "288",
+				"name": "パレス",
+				"names": {
+					"ja": "パレス",
+					"tw": "帕雷斯",
+					"en": "Pales"
+				},
+				"rarity": 5,
+				"grade": 83,
+				"icon": "jyasin_pales.jpg",
+				"skills": ["超自然治癒","邪神殿の威光","貧者の号哭"],
+				"skill4": ["","ネクロ・ドグマ","リカームドラ","幻影の権化","火炎無効"],
+				"skill5": ["","スクカオート","快癒サバイバ","勇奮の鼓舞","ディスタブ"],
+				"elements": ["","wk","rp","","","rp","dr"],
+				"type": "support",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
 				"id": "121",
 				"name": "ギリメカラ",
 				"names": {
@@ -5204,7 +5248,7 @@ export default [
 			"en": "Hero"
 		},
 		"fusion": false,
-		"highlight": true,
+		"highlight": false,
 		"formulas": [],
 		"devils": [
 			{
@@ -6377,6 +6421,28 @@ export default [
 				"skill5": ["","ミナゴロシの愉悦","スクカオート","三段の剛力","氷結耐性"],
 				"elements": ["","rs","wk","","","rs","rp"],
 				"type": "support",
+				"fusion": false,
+				"fusionAsMaterial": false,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
+				"id": "287",
+				"name": "ケルヌンノス",
+				"names": {
+					"ja": "ケルヌンノス",
+					"tw": "塞努諾斯",
+					"en": "Cernunnos"
+				},
+				"rarity": 5,
+				"grade": 81,
+				"icon": "sinigami_cernunnos.jpg",
+				"skills": ["不屈の闘志・改","死生の扉","死魂の狩猟"],
+				"skill4": ["","メギドラ","奈落のマスク","呪殺ハイブースタ","衝撃無効"],
+				"skill5": ["","奈落のマスク","大暗殺者","マハムドダイン","強靭の権化"],
+				"elements": ["","","","rp","wk","","rp"],
+				"type": "attack",
 				"fusion": false,
 				"fusionAsMaterial": false,
 				"formula": [],
