@@ -4751,6 +4751,50 @@ export default [
 				"source": "summon"
 			},
 			{
+				"id": "279",
+				"name": "狂戦士ガッツ",
+				"names": {
+					"ja": "狂戦士ガッツ",
+					"tw": "狂戰士凱茲",
+					"en": "Berserker Guts"
+				},
+				"rarity": 5,
+				"grade": 90,
+				"icon": "majin_berserker_guts.jpg",
+				"skills": ["千発千中","狂戦士の甲冑","ベルセルク"],
+				"skill4": ["","暴飲暴食","討滅の咆哮","致命の一撃","物理反射"],
+				"skill5": ["","デスカウンター","龍の反応","ギガントマキア","破壊の権化"],
+				"elements": ["nu","","","","","","rs"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": false,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
+				"id": "281",
+				"name": "ゾッド",
+				"names": {
+					"ja": "ゾッド",
+					"tw": "索特",
+					"en": "Zodd"
+				},
+				"rarity": 5,
+				"grade": 90,
+				"icon": "majin_zodd.jpg",
+				"skills": ["破壊の権化","不死者","引きちぎり"],
+				"skill4": ["勝利のチャクラ","メガトンレイド","チャージ","即死無効","物理吸収"],
+				"skill5": ["","物理ハイブースタ","強靭の権化","超自然治癒","ミナゴロシの愉悦"],
+				"elements": ["nu","","","","","","nu"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": false,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
 				"id": "",
 				"name": "ダンテ☆",
 				"names": {
@@ -5068,7 +5112,7 @@ export default [
 			"en": "Hero"
 		},
 		"fusion": false,
-		"highlight": false,
+		"highlight": true,
 		"formulas": [],
 		"devils": [
 			{
@@ -5108,6 +5152,28 @@ export default [
 				"skill4": ["不屈の闘志","ギガントマキア","チャージ","物理ハイブースタ","物理吸収"],
 				"skill5": ["","ゴッドハンド","スクカオート","ミナゴロシの愉悦","氷結耐性"],
 				"elements": ["rs","","","","","nu","nu"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": false,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
+				"id": "280",
+				"name": "グリフィス",
+				"names": {
+					"ja": "グリフィス",
+					"tw": "古力菲斯",
+					"en": "Griffith"
+				},
+				"rarity": 5,
+				"grade": 95,
+				"icon": "eiyuu_griffith.jpg",
+				"skills": ["寸分の見切り","光の鷹","絶対者の剣"],
+				"skill4": ["","空間殺法","疾風の咆哮","信義なる反撃","物理反射"],
+				"skill5": ["","致命の一撃","大暗殺者","鋭気の権化","魔封無効"],
+				"elements": ["nu","","","","","dr","nu"],
 				"type": "attack",
 				"fusion": false,
 				"fusionAsMaterial": false,

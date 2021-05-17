@@ -3,7 +3,7 @@
 
         <div v-if="info_devil">
             <div class="row justify-content-center">
-                
+
                 <div class="col-12">
                     <devil :devil="info_devil" usage="info"></devil>
                 </div>
@@ -24,7 +24,7 @@
                         </tbody>
                     </table>
                 </div>
-                
+
                 <div class="col-12 mt-2">
                     <table class="table table-sm table-bordered my-0">
                         <tbody>
@@ -50,7 +50,7 @@
                 </div>
 
             </div>
-            
+
         </div>
 
     </b-modal>
