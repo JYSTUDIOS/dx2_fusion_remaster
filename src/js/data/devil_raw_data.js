@@ -7618,5 +7618,62 @@ export default [
 				"source": "summon"
 			}
 		]
-	}
+	},
+	{
+		"name": "熾天使",
+		"names": {
+			"ja": "熾天使",
+			"tw": "熾天使",
+			"en": "熾天使"
+		},
+		"fusion": false,
+		"highlight": false,
+		"formulas": [],
+		"devils": [
+			{
+				"id": "289",
+				"name": "フラロウス・ハレル",
+				"names": {
+					"ja": "フラロウス・ハレル",
+					"tw": "佛勞洛斯哈雷路",
+					"en": "Flauros Hallel"
+				},
+				"rarity": 5,
+				"grade": 91,
+				"icon": "chitianshi_flauros.jpg",
+				"skills": ["不屈の闘志・改","賛美の光輪","バプテスマ"],
+				"skill4": ["","マハンマダイン","コンセントレイト","魅了無効","電撃反射"],
+				"skill5": ["","破魔ハイブースタ","ラクカオート","緊縛無効","三分の活泉"],
+				"elements": ["","","nu","nu","","rp","nu"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": false,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
+				"id": "290",
+				"name": "オセ・ハレル",
+				"names": {
+					"ja": "オセ・ハレル",
+					"tw": "歐賽哈雷路",
+					"en": "Ose Hallel"
+				},
+				"rarity": 5,
+				"grade": 90,
+				"icon": "chitianshi_ose.jpg",
+				"skills": ["不屈の闘志・改","賛美の剣","ヘブンリーソード"],
+				"skill4": ["","冥界破","リカームドラ","物理ハイブースタ","物理反射"],
+				"skill5": ["","致命の一撃","スクンダオート","千発千中","デスカウンター"],
+				"elements": ["","","","","","rp","nu"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": false,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			}
+		]
+	},
 ]
