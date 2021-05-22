@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 import Resource from '../class/resource'
 import devil_raw_data from '../data/devil_raw_data'
 import skill_raw_data from '../data/skill_raw_data'
+import sword_shield_raw_data from '../data/sword_shield_raw_data'
 
 Vue.use(Vuex)
 
@@ -11,7 +12,7 @@ const _state = {
     fusion_options:[]
 }
 
-const resource = new Resource(devil_raw_data, skill_raw_data)
+const resource = new Resource(devil_raw_data, skill_raw_data,sword_shield_raw_data)
 
 const store = new Vuex.Store({
     state:{
@@ -85,7 +86,7 @@ const store = new Vuex.Store({
 const mapState = function(states) {
 
     let res = {};
-    
+
     states.forEach(name=>{
 
         if(typeof store._mutations[name] !== 'undefined'){

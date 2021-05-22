@@ -4,9 +4,9 @@ import Skill from './skill'
 import SkillType from './skill_type'
 
 class Resource{
-    
-    constructor(devil_raw_data, skill_raw_data){
-        
+
+    constructor(devil_raw_data, skill_raw_data, sword_shield_raw_data){
+
         this.races = [];
         this.devils = [];
         this.skillTypes = [];
@@ -63,8 +63,8 @@ class Resource{
                 [devil.skills,devil.skill4,devil.skill5] =
                 [devil.skills,devil.skill4,devil.skill5].map( skill_list => {
                     return skill_list.map( name => {
-                        return skill_data[name] 
-                            ? skill_data[name].addDevil(devil) 
+                        return skill_data[name]
+                            ? skill_data[name].addDevil(devil)
                             : new Skill({name:name});
                     });
                 });
@@ -73,7 +73,7 @@ class Resource{
             //devil's fusion property
 
             let devils_with_fusion = race.devils.filter(d=>d.fusion&&d.source=='normal_fusion');
-            
+
             devils_with_fusion.forEach( (devil, index) => {
 
                 devil.max = devil.grade;
@@ -89,12 +89,12 @@ class Resource{
 
             devil_raw_data.forEach( r0 => {
                 r0.formulas.forEach( f => {
-                    
+
                     let r2 = f[0].name == r1.name ? f[1] : (f[1].name == r1.name ? f[0] : null) ;
 
                     if( ! r2 ) return;
 
-                    usage_temp[r0.name] = (r0.name in usage_temp) 
+                    usage_temp[r0.name] = (r0.name in usage_temp)
                         ? usage_temp[r0.name].concat(r2)
                         : [r2] ;
                 });
@@ -122,7 +122,7 @@ class Resource{
         while( break_limit-- > 0 && !all_pass){
 
             all_pass = true;
-            
+
             devil_array.forEach( devil => {
 
                 let pass = true;
@@ -133,27 +133,27 @@ class Resource{
                     let pure_cost = null;
 
                     if(devil.fission_boms.length){
-                        
+
                         devil.fission_boms.forEach( bom => {
 
                             if(!bom.auto)
                                 return ;
 
                             let l_pure_cost = bom.getCostPure(rarity);
-                            
+
                             if(l_pure_cost==null) pass = false;
                             else if(pure_cost==null) pure_cost = l_pure_cost;
                             else pure_cost = pure_cost > l_pure_cost ? l_pure_cost : pure_cost;
 
                             let l_cost = bom.getCost(rarity);
-        
+
                             if(l_cost==null)    pass = false;
                             else if(cost==null) cost = l_cost;
                             else                cost = cost > l_cost ? l_cost : cost;
                         });
 
                         if(devil.rarity > rarity){
-        
+
                             if(pure_cost!=null && devil.pure_costs[rarity] != pure_cost){
                                 devil.pure_costs[rarity] = pure_cost;
                                 pass = false;
@@ -174,7 +174,7 @@ class Resource{
                         devil.costs[rarity] = 0;
                     }
                 }
-            
+
                 if(!pass)   all_pass = false;
             });
         }
@@ -184,7 +184,7 @@ class Resource{
 
         this.devils = devil_array;
         this.devil_data = devil_data;
-        
+
         this.skillTypes = skill_raw_data;
         this.skill_data = skill_data;
         this.skills = Object.values(skill_data);

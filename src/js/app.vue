@@ -3,10 +3,12 @@ import 'url-search-params-polyfill'
 import {mapState} from './utility/store'
 import Cookie from './utility/cookie'
 import VueDevil from './components/devil.vue'
+import VueSwordShield from './components/sword_shield.vue'
 import VueSkillList from './components/skill_list.vue'
 import VueDevilList from './components/devil_list.vue'
 import VueDevilBomBuilder from './components/devil_bom_builder.vue'
 import VueDevilBomOptions from './components/devil_bom_options.vue'
+import VueSwordShieldInfo from './components/sword_shield_info.vue'
 import VueDevilInfo from './components/devil_info.vue'
 import Version from './version'
 
@@ -14,11 +16,13 @@ export default {
 
     components:{
         'devil': VueDevil,
+        'sword-shield': VueSwordShield,
         'skill-list': VueSkillList,
         'devil-list': VueDevilList,
         'devil-bom-builder': VueDevilBomBuilder,
         'devil-bom-options': VueDevilBomOptions,
-        'devil-info': VueDevilInfo
+        'devil-info': VueDevilInfo,
+        'sword-shield-info': VueSwordShieldInfo,
     },
     data:function(){
         return {
@@ -29,7 +33,7 @@ export default {
         //builder
         builder_rarity_options:[],
         //fusion
-        fusion_rarity_options:[],        
+        fusion_rarity_options:[],
         //setting
         cache_lang_value:'ja',
         lang_options:[
@@ -82,9 +86,9 @@ export default {
         }
 
         //Lang
-        this.lang_value = window.location.hash 
+        this.lang_value = window.location.hash
             ? window.location.hash.substring(1)
-            : Cookie.getCookie('lang_value'); 
+            : Cookie.getCookie('lang_value');
 
         //allow down grade
         this.down_grade = Cookie.getCookie('allow_down_grade');
@@ -103,12 +107,12 @@ export default {
 
         //User Query
         let params, route, dname, rname, races, race, devils, devil;
-        
+
         params = new URLSearchParams(window.location.search);
         route = params.get('route');
         dname = params.get('devil') ? params.get('devil') : params.get('demon');
         rname = params.get('race');
-    
+
         if(rname){
             races = this.races.filter(r=>Object.values(r.names).includes(rname))
             race = races.length > 0 ? races[0] : null;
@@ -129,7 +133,7 @@ export default {
     watch:{
 
         input_keyword:function(){
-            
+
             let myApp = this;
 
             clearTimeout(this.keyword_timer);
@@ -143,20 +147,20 @@ export default {
         ...mapState([
             'resource','devils','races','skillTypes','skills',
             'builder_target','info_devil','builder_options','current_bom',
-            'fusion_target','fusion_options'
+            'fusion_target','fusion_options','sword_shield'
             ]),
         lang_value:{
             get:function(){
-                
+
                 return this.cache_lang_value;
             },
             set:function(value){
-         
+
                 if(this.lang_options.map(x=>x.value).includes(value)){
-                    
+
                     this.cache_lang_value = value;
                     Cookie.setCookie('lang_value', value);
-                    
+
                     this.$i18n.locale = value;
                 }
             }
@@ -170,7 +174,7 @@ export default {
             set:function(value){
 
                 if(this.down_grade_options.map(x=>x.value).includes(value)){
-                    
+
                     this.cache_down_grade = value;
                     Cookie.setCookie('allow_down_grade', value);
 
@@ -180,7 +184,7 @@ export default {
             }
         },
         prevent_unload:{
-          
+
             get:function(){
 
                 return this.cache_prevent_unload;
@@ -188,7 +192,7 @@ export default {
             set:function(value){
 
                 if(this.prevent_unload_options.map(x=>x.value).includes(value)){
-                    
+
                     this.cache_prevent_unload = value
                     Cookie.setCookie('allow_prevent_unload', value);
                 }
@@ -229,7 +233,7 @@ export default {
 
             if(keyword){
                 keyword = new RegExp(keyword, 'i');
-                result = this.skills.filter( 
+                result = this.skills.filter(
                     s => Object.values(s.names).join().match(keyword)
                 );
             }
@@ -245,10 +249,10 @@ export default {
             this.builder_options.forEach( option => {
 
                 let boms = option.boms.filter( bom => {
-                    
+
                     let r = bom.devil.rarity;
                     let [r1,r2] = [bom.child1.devil.rarity,bom.child2.devil.rarity].sort( (a,b) => (a-b) );
-                    
+
                     return ( down_grade=='1' || (r>=r1&&r>=r2) )
                         ? filters.filter( filter => filter.text==r1+'+'+r2 ).length > 0
                         : false;
@@ -269,16 +273,16 @@ export default {
             this.fusion_options.forEach( option => {
 
                 let formulas = [];
-                
+
                 option.formulas.forEach( formula =>{
 
                     let boms = formula.boms.filter( bom => {
-                    
+
                         let r = bom.devil.rarity;
                         let [r1,r2] = [bom.child1.devil.rarity,bom.child2.devil.rarity].sort( (a,b) => (a-b) );
                         let text = r1+'+'+r2;
 
-                        return ( down_grade=='1' || (r>=r1&&r>=r2) ) 
+                        return ( down_grade=='1' || (r>=r1&&r>=r2) )
                             ? filters.filter( filter => filter.text==text ).length > 0
                             : false;
                     });
@@ -292,12 +296,12 @@ export default {
                     options.push({devil:option.devil,formulas:formulas,active:false});
                 }
             });
-            
+
             return options;
         }
     },
     methods:{
-        
+
         listen:function(res){
             switch(res.name){
                 case 'info': this.show_devil_info(res.value); break;
@@ -316,7 +320,7 @@ export default {
             });
         },
         show_devil_info:function(devil){
-            
+
             this.info_devil = devil;
             this.$bvModal.show(this.modal_id);
         },
@@ -328,7 +332,7 @@ export default {
                 this.route('last');
         },
         route:function(name, skip_update_last){
-            
+
             var index_main = this.index_main;
             var index_fusion = this.index_fusion;
 
@@ -340,6 +344,7 @@ export default {
                 case 'customize':       index_main = 2;                     break;
                 case 'search':          index_main = 3;                     break;
                 case 'setting':         index_main = 4;                     break;
+                case 'swordShield':     index_main = 5;                     break;
                 case 'last':            index_main = this.index_main_last;
                                         index_fusion = this.index_fusion_last;  break;
                 default:                index_main = 0; index_fusion = 0;   break;
@@ -354,7 +359,7 @@ export default {
             this.index_fusion = index_fusion;
         },
         isRoute:function(name){
-            
+
             var index_main = this.index_main;
             var index_fusion = this.index_fusion;
 
@@ -367,6 +372,7 @@ export default {
                 case 'customize':       index_main = 2;                     break;
                 case 'search':          index_main = 3;                     break;
                 case 'setting':         index_main = 4;                     break;
+                case 'swordShield':     index_main = 5;                     break;
                 default:                index_main = 0; index_fusion = 0;   break;
             }
 
@@ -402,7 +408,7 @@ export default {
             this.update_builder_filter();
         },
         update_builder_filter:function(){
-            
+
             let combs = {};
             let down_grade = this.down_grade;
 
@@ -418,7 +424,7 @@ export default {
                     }
                 });
             });
-            
+
             this.builder_rarity_options.forEach( option =>　{ option.active = option.state = (option.text in combs) });
         },
         builder_rarity_option_click:function(option){
@@ -433,7 +439,7 @@ export default {
             //all stand (first down), then all down but u
             else if(still_stands.length==filters.length){
                 filters.forEach(opt=>{ opt.state = (opt==option) });
-            } 
+            }
             //only u stand and is current (last down), then all stand
             else if(still_stands.length == 1 && still_stands[0] == option){
                 filters.forEach(opt=>{opt.state=true});
@@ -458,7 +464,7 @@ export default {
 
             let combs = {};
             let down_grade = this.down_grade;
-            
+
             this.fusion_options.forEach( option => {
                 option.formulas.forEach( formula => {
                     formula.boms.forEach( bom => {
@@ -473,7 +479,7 @@ export default {
                     });
                 });
             });
-            
+
             this.fusion_rarity_options.forEach( option => { option.active = option.state = ( option.text in combs) });
         },
         fusion_rarity_option_click:function(option){
@@ -488,7 +494,7 @@ export default {
             //all stand (first down), then all down but u
             else if(still_stands.length==filters.length){
                 filters.forEach(opt=>{ opt.state = (opt==option) });
-            } 
+            }
             //only u stand and is current (last down), then all stand
             else if(still_stands.length == 1 && still_stands[0] == option){
                 filters.forEach(opt=>{opt.state=true});
@@ -499,7 +505,7 @@ export default {
             }
         },
         builder_auto_costdown:function(rarity, type){
-            
+
             this.auto_costdown(this.builder_target, rarity, type);
             this.update_current_bom(null);
         },
@@ -524,7 +530,7 @@ export default {
                 if(boms.length>0){
                     bom.set(boms[0]);
                 }
-                
+
                 if(type==1){
                     //雜體
                     //var type1 = bom.pure_child == 1 ? 0 : 1;
@@ -558,7 +564,7 @@ export default {
 
 
 <template>
-    
+
 <div>
     <div class="container-fluid px-0 mw-1920">
         <b-navbar toggleable="md" type="dark" variant="info">
@@ -566,13 +572,14 @@ export default {
             <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
             <b-navbar-brand href="#" @click="route('home')" class="d-none d-md-block">Dx2</b-navbar-brand>
             <b-navbar-brand href="#" @click="searchBar=!searchBar" class="d-block d-md-none">{{ $t('message.search') }}</b-navbar-brand>
-            
+
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
                     <b-nav-item href="#" @click="route('fusion.devil')" :active="isRoute('fusion.devil')">{{ $t('message.devil') }}</b-nav-item>
                     <b-nav-item href="#" @click="route('fusion.fission')" :active="isRoute('fusion.fission')">{{ $t('message.reverse_fusion') }}</b-nav-item>
                     <b-nav-item href="#" @click="route('fusion.fusion')" :active="isRoute('fusion.fusion')">{{ $t('message.normal_fusion') }}</b-nav-item>
                     <b-nav-item href="#" @click="route('skill')" :active="isRoute('skill')">{{ $t('message.skill') }}</b-nav-item>
+                    <b-nav-item href="#" @click="route('swordShield')" :active="isRoute('swordShield')">{{ $t('message.swordShield') }}</b-nav-item>
                 </b-navbar-nav>
                 <b-navbar-nav class="ml-auto">
                     <b-nav-form action="#" class="d-none d-md-block">
@@ -667,15 +674,15 @@ export default {
                                     <b-list-group-item class="p-2" v-if="fusion_options.length">
                                         <div class="row no-gutters justify-content-center">
                                             <div class="col-auto p-1"
-                                            v-for="(option,index) in fusion_rarity_options.filter(x=>x.active)" :key="index"> 
-                                                <b-button :pressed="option.state" 
+                                            v-for="(option,index) in fusion_rarity_options.filter(x=>x.active)" :key="index">
+                                                <b-button :pressed="option.state"
                                                     @click="fusion_rarity_option_click(option)"
                                                     variant="outline-secondary">
                                                     {{ option.text }}
                                                 </b-button>
                                             </div>
                                         </div>
-                                    </b-list-group-item>    
+                                    </b-list-group-item>
                                     <b-list-group-item class="p-2" v-if="filtered_fusion_options.length">
 
                                         <div class="row no-gutters">
@@ -689,7 +696,7 @@ export default {
                                                         </devil>
                                                     </div>
                                                 </div>
-                
+
                                                 <b-collapse :id="'fusion_'+index" accordion="fusion_accrodion" class="p-2">
                                                     <b-card no-body style="background-color:#eee">
                                                         <devil-bom-options :options="option.formulas" usage="fusion" @listen="listen"></devil-bom-options>
@@ -697,16 +704,16 @@ export default {
                                                 </b-collapse>
 
                                             </div>
-                                            
+
                                         </div>
-                                        
+
                                     </b-list-group-item>
                                 </b-list-group>
-                            
+
                             </b-card>
 
                         </b-tab>
-                        
+
 
                     </b-tabs>
                 </b-card>
@@ -730,10 +737,33 @@ export default {
 
             <b-tab no-body class="p-2"></b-tab>
 
+          <!-- index_main : 5 // sword_shield-->
+
+          <b-tab no-body>
+
+            <b-card no-body class="border-0">
+              <b-tabs card nav-wrapper-class="d-block d-md-none" content-class="p-2">
+
+                <b-tab :title="$t('message.devil')" no-body>
+                  <b-card no-body>
+                    <b-tabs pills card v-model="race_id" content-class="d-none">
+                      <b-tab v-for="(race,index) in races" :key="index">
+                        <template #title>
+                          <span v-bind:style="{'text-decoration':race.highlight?'underline':'none'}">{{ race.showName() }} </span>
+                        </template>
+                      </b-tab>
+                    </b-tabs>
+                    <devil-list :devils="devils_by_race" usage="fission" @listen="listen"></devil-list>
+                  </b-card>
+                </b-tab>
+              </b-tabs>
+            </b-card>
+          </b-tab>
+
             <!-- index_main : 3 // search-->
 
             <b-tab no-body class="p-2">
-                
+
                 <b-card no-body class="mt-2" v-if="filtered_devils.length>0">
                     <devil-list :devils="filtered_devils" usage="fission" @listen="listen"></devil-list>
                 </b-card>
@@ -747,7 +777,7 @@ export default {
             <!-- index_main : 4 // setting-->
 
             <b-tab no-body class="p-2">
-            
+
                 <div class="row no-gutters" style="background:url('public/images/theme/steven.png') no-repeat right center; background-size:auto 300px">
                     <div class="col-12 py-2">
                         <div class="font-weight-bold py-2">{{ $t('message.language') }}</div>
@@ -799,13 +829,13 @@ export default {
                         </div>
                     </div>
                 </div>
-                   
+
             </b-tab>
-        
+
         </b-tabs>
 
     </div>
-    
+
     <!-- footer -->
     <div class="container-fluid mw-1920">
         <div class="d-flex">
@@ -816,14 +846,14 @@ export default {
                 <a href="https://github.com/oceanxdds/dx2_fusion" target="_blank">
                     <img src="public/images/theme/GitHub-Mark-32px.png" alt="GitHub">
                 </a>
-            </div>  
+            </div>
         </div>
     </div>
     <div class="container-fluid mw-1920 mb-3">
         <div class="d-flex justify-content-end">
             <div class="p-1">
                 <span class="small">Version: {{ updated_at }}</span>
-            </div>  
+            </div>
         </div>
     </div>
 
@@ -831,5 +861,5 @@ export default {
     <devil-info :id="modal_id"></devil-info>
 
 </div>
-    
+
 </template>
