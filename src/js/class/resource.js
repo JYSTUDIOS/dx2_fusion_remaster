@@ -2,6 +2,9 @@ import Race from './race'
 import Devil from './devil'
 import Skill from './skill'
 import SkillType from './skill_type'
+import sword_shield from "../components/sword_shield";
+import SwordShieldType from "./sword_shield_type";
+import Sword_shield from "./sword_shield";
 
 class Resource{
 
@@ -11,13 +14,14 @@ class Resource{
         this.devils = [];
         this.skillTypes = [];
         this.skills = [];
+        this.swordShieldData = [];
 
         let race_data = {};
         let devil_data = {};
         let devil_array = [];
         let type_data = {};
         let skill_data = {};
-
+        let sword_shield_data = {};
         //Race & Devil
 
         devil_raw_data = devil_raw_data.map( race => {
@@ -37,6 +41,16 @@ class Resource{
                 return skill_data[skill.name] = skill;
             });
             return type_data[type.name] = type;
+        });
+
+        sword_shield_raw_data = sword_shield_raw_data.map( type =>{
+            type = new SwordShieldType(type);
+            type.swordShields = type.swordShields.map( swordShield => {
+                swordShield = new Sword_shield(swordShield);
+                skill.type = type;
+                return sword_shield_data[swordShield.name] = swordShield;
+            });
+            return
         });
 
         //Details

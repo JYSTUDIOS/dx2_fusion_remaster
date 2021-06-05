@@ -10,6 +10,7 @@ class Sword_shield {
         this.elements = swordShield.elements;
         this.icon = swordShield.icon;
         this.panels = swordShield.panels;
+        this.type = null;
     }
 
     showName() {
