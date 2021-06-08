@@ -85,7 +85,7 @@ export default {
     }
   },
   computed:{
-    ...mapState(['info_devil'])
+    ...mapState(['info_sword_shield'])
   }
 }
 </script>

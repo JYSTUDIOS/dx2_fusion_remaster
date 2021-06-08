@@ -18,6 +18,7 @@ const store = new Vuex.Store({
     state:{
         current_bom:0,
         info_devil:0,
+        info_sword_shield:0,
         builder_target:0,
         builder_options:0,
         fusion_target:0,
@@ -26,6 +27,7 @@ const store = new Vuex.Store({
     getters:{
         resource:() => resource,
         races:() => resource.races,
+        swordShieldTypes:() => resource.swordShieldTypes,
         devils:() => resource.devils,
         skills:() => resource.skills,
         skillTypes:() => resource.skillTypes,
@@ -36,6 +38,10 @@ const store = new Vuex.Store({
         info_devil:state=>{
             state.info_devil;
             return _state.info_devil;
+        },
+        info_sword_shield:state=>{
+            state.info_sword_shield;
+            return _state.info_sword_shield;
         },
         builder_target:state=>{
             state.builder_target;
@@ -62,6 +68,10 @@ const store = new Vuex.Store({
         info_devil:(state, value)=>{
             state.info_devil++;
             _state.info_devil = value;
+        },
+        info_sword_shield:(state, value)=>{
+            state.info_sword_shield++;
+            _state.info_sword_shield = value;
         },
         builder_target:(state, value)=>{
             state.builder_target++;

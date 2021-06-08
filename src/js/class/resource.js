@@ -2,9 +2,8 @@ import Race from './race'
 import Devil from './devil'
 import Skill from './skill'
 import SkillType from './skill_type'
-import sword_shield from "../components/sword_shield";
 import SwordShieldType from "./sword_shield_type";
-import Sword_shield from "./sword_shield";
+import SwordShield from "./sword_shield";
 
 class Resource{
 
@@ -14,7 +13,8 @@ class Resource{
         this.devils = [];
         this.skillTypes = [];
         this.skills = [];
-        this.swordShieldData = [];
+        this.swordShields = [];
+        this.swordShieldTypes = [];
 
         let race_data = {};
         let devil_data = {};
@@ -22,7 +22,12 @@ class Resource{
         let type_data = {};
         let skill_data = {};
         let sword_shield_data = {};
+        let sword_shield_type = {};
         //Race & Devil
+
+        // console.log("更改前：");
+        // console.log(devil_raw_data);
+        // console.log(this.races);
 
         devil_raw_data = devil_raw_data.map( race => {
             race.devils = race.devils.map( devil => {
@@ -31,6 +36,25 @@ class Resource{
             return race_data[race.name] = new Race(race);
         });
 
+        console.log("惡魔類型數據：");
+        // console.log(devil_raw_data);
+        console.log(race_data);
+
+        console.log("惡魔數據：");
+        console.log(devil_data);
+
+        sword_shield_raw_data = sword_shield_raw_data.map( types => {
+            types.swordShields = types.swordShields.map( ss => {
+                console.log("每个剑盾数据：");
+                console.log(ss);
+                return sword_shield_data[ss.name] = new SwordShield(ss);
+            });
+            return sword_shield_type[types.name] = new SwordShieldType(types);
+        });
+
+        console.log("劍盾類型數據：\n");
+        // console.log(devil_raw_data);
+        console.log(sword_shield_type);
         //Skill Type & Skill
 
         skill_raw_data = skill_raw_data.map( type => {
@@ -43,15 +67,17 @@ class Resource{
             return type_data[type.name] = type;
         });
 
-        sword_shield_raw_data = sword_shield_raw_data.map( type =>{
-            type = new SwordShieldType(type);
-            type.swordShields = type.swordShields.map( swordShield => {
-                swordShield = new Sword_shield(swordShield);
-                skill.type = type;
-                return sword_shield_data[swordShield.name] = swordShield;
-            });
-            return
-        });
+        console.log("剑盾数据：");
+        console.log(sword_shield_raw_data);
+        // sword_shield_raw_data = sword_shield_raw_data.map( type =>{
+        //     type = new SwordShieldType(type);
+        //     type.swordShields = type.swordShields.map( swordShield => {
+        //         swordShield = new Sword_shield(swordShield);
+        //         skill.type = type;
+        //         return sword_shield_data[swordShield.name] = swordShield;
+        //     });
+        //     return
+        // });
 
         //Details
 
@@ -201,7 +227,12 @@ class Resource{
 
         this.skillTypes = skill_raw_data;
         this.skill_data = skill_data;
+        console.log("技能数据：");
+        console.log(skill_data);
         this.skills = Object.values(skill_data);
+
+        this.swordShieldTypes = sword_shield_type;
+        this.swordShields = sword_shield_data;
     }
 }
 

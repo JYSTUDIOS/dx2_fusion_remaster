@@ -53,6 +53,7 @@ export default {
         ],
         //router
         race_id:0,
+        sword_shield_id:0,
         skillType_id:0,
         index_main:0,
         index_main_last:0,
@@ -145,9 +146,9 @@ export default {
     },
     computed:{
         ...mapState([
-            'resource','devils','races','skillTypes','skills',
+            'resource','devils','races','skillTypes','skills','swordShieldTypes',
             'builder_target','info_devil','builder_options','current_bom',
-            'fusion_target','fusion_options','sword_shield'
+            'fusion_target','fusion_options',
             ]),
         lang_value:{
             get:function(){
@@ -211,6 +212,13 @@ export default {
                 this.skillType_id = this.skillType.length-1;
 
             return this.skillTypes[this.skillType_id].skills;
+        },
+        sword_shield_by_type:function(){
+
+          if(this.sword_shield_id >= this.sword_shield_id.length)
+            this.race_id = this.races.length-1;
+
+          return this.races[this.race_id].devils;
         },
         filtered_devils: function(){
 
@@ -342,9 +350,9 @@ export default {
                 case 'fusion.fusion':   index_main = 0; index_fusion = 2;   break;
                 case 'skill':           index_main = 1;                     break;
                 case 'customize':       index_main = 2;                     break;
-                case 'search':          index_main = 3;                     break;
-                case 'setting':         index_main = 4;                     break;
-                case 'swordShield':     index_main = 5;                     break;
+                case 'swordShield':     index_main = 3;                     break;
+                case 'search':          index_main = 4;                     break;
+                case 'setting':         index_main = 5;                     break;
                 case 'last':            index_main = this.index_main_last;
                                         index_fusion = this.index_fusion_last;  break;
                 default:                index_main = 0; index_fusion = 0;   break;
@@ -363,6 +371,9 @@ export default {
             var index_main = this.index_main;
             var index_fusion = this.index_fusion;
 
+            console.log("name"+ name);
+            console.log("index_main" + index_main);
+
             switch(name){
                 case 'home':            index_main = 0; index_fusion = 0;   break;
                 case 'fusion.devil':    index_main = 0; index_fusion = 0;   break;
@@ -370,9 +381,9 @@ export default {
                 case 'fusion.fusion':   index_main = 0; index_fusion = 2;   break;
                 case 'skill':           index_main = 1;                     break;
                 case 'customize':       index_main = 2;                     break;
-                case 'search':          index_main = 3;                     break;
-                case 'setting':         index_main = 4;                     break;
-                case 'swordShield':     index_main = 5;                     break;
+                case 'swordShield':     index_main = 3;                     break;
+                case 'search':          index_main = 4;                     break;
+                case 'setting':         index_main = 5;                     break;
                 default:                index_main = 0; index_fusion = 0;   break;
             }
 
@@ -607,7 +618,6 @@ export default {
                         <b-tab :title="$t('message.devil')" no-body>
                             <b-card no-body>
                                 <b-tabs pills card v-model="race_id" content-class="d-none">
-                                    <!-- <b-tab :title="race.showName()" v-for="(race,index) in races" :key="index" :title-link-class="{'font-weight-bold':race.highlight}"></b-tab> -->
                                     <b-tab v-for="(race,index) in races" :key="index">
                                         <template #title>
                                             <span v-bind:style="{'text-decoration':race.highlight?'underline':'none'}">{{ race.showName() }} </span>
@@ -737,30 +747,24 @@ export default {
 
             <b-tab no-body class="p-2"></b-tab>
 
-          <!-- index_main : 5 // sword_shield-->
+          <!-- index_main : 3 // sword_shield-->
 
-          <b-tab no-body>
+          <b-tab no-body class="p-2">
 
-            <b-card no-body class="border-0">
-              <b-tabs card nav-wrapper-class="d-block d-md-none" content-class="p-2">
-
-                <b-tab :title="$t('message.devil')" no-body>
-                  <b-card no-body>
-                    <b-tabs pills card v-model="race_id" content-class="d-none">
-                      <b-tab v-for="(race,index) in races" :key="index">
-                        <template #title>
-                          <span v-bind:style="{'text-decoration':race.highlight?'underline':'none'}">{{ race.showName() }} </span>
-                        </template>
-                      </b-tab>
-                    </b-tabs>
-                    <devil-list :devils="devils_by_race" usage="fission" @listen="listen"></devil-list>
-                  </b-card>
+            <b-card no-body>
+              <b-tabs pills card v-model="sword_shield_id" content-class="d-none">
+                <b-tab v-for="(swordShieldType,index) in swordShieldTypes" :key="index">
+                  <template #title>
+                    <span v-bind:style="{'underline':'none'}">{{ swordShieldType.showName() }} </span>
+                  </template>
                 </b-tab>
               </b-tabs>
+              <sword-shield-info></sword-shield-info>
             </b-card>
+
           </b-tab>
 
-            <!-- index_main : 3 // search-->
+            <!-- index_main : 4 // search-->
 
             <b-tab no-body class="p-2">
 
@@ -774,7 +778,7 @@ export default {
 
             </b-tab>
 
-            <!-- index_main : 4 // setting-->
+            <!-- index_main : 5 // setting-->
 
             <b-tab no-body class="p-2">
 
