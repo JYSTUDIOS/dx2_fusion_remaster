@@ -2304,6 +2304,7 @@ export default [
 			"en": "Snake"
 		},
 		"fusion": true,
+		"highlight": true,
 		"formulas": [["龍神","墮天使"],["龍神","邪神"],["天使","靈鳥"],["妖魔","幻魔"],["妖精","幻魔"],["妖鬼","墮天使"],["夜魔","天使"],["外道","幻魔"],["外道","妖魔"],["魔王","破壞神"],["魔王","外道"],["邪鬼","龍神"],["地靈","鬼神"],["邪龍","大天使"],["邪龍","地靈"],["魔王","兇鳥"]],
 		"devils": [
 			{
@@ -2345,6 +2346,28 @@ export default [
 				"elements": ["","wk","nu","rs","","","wk"],
 				"type": "support",
 				"fusion": true,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "normal_fusion"
+			},
+			{
+				"id": "295",
+				"name": "ヴィーヴル",
+				"names": {
+					"ja": "ヴィーヴル",
+					"tw": "薇薇爾",
+					"en": "Vouivre"
+				},
+				"rarity": 4,
+				"grade": 60,
+				"icon": "ryuuou_vouivre.jpg",
+				"skills": ["毒針","マリンカリン","ガーネットの共鳴"],
+				"skill4": ["ベノンザッパー","","","",""],
+				"skill5": ["","","","",""],
+				"elements": ["","","wk","rs","","",""],
+				"type": "attack",
+				"fusion": false,
 				"fusionAsMaterial": true,
 				"formula": [],
 				"fusionMag": 0,
@@ -6942,7 +6965,7 @@ export default [
 			"en": "??"
 		},
 		"fusion": false,
-		"highlight": false,
+		"highlight": true,
 		"formulas": [],
 		"devils": [
 			{
@@ -6982,6 +7005,28 @@ export default [
 				"skill4": ["二段の賢魔","混沌の海","ディスタブ","奈落のマスク","呪殺無効"],
 				"skill5": ["","二段の賢魔","二段の強運","ハマダイン","衝撃耐性"],
 				"elements": ["","","","","","rs","rs"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": false,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
+				"id": "296",
+				"name": "ソニック",
+				"names": {
+					"ja": "ソニック",
+					"tw": "索尼克",
+					"en": "sonic"
+				},
+				"rarity": 4,
+				"grade": 70,
+				"icon": "qq_sonic.jpg",
+				"skills": ["スピードスター","音速のハリネズミ","スピンダッシュ"],
+				"skill4": ["","空間殺法","チャージ","衝撃ブースタ","衝撃無効"],
+				"skill5": ["","虐殺者","二段の猛速","百発百中","食いしばり"],
+				"elements": ["","","","","rs","",""],
 				"type": "attack",
 				"fusion": false,
 				"fusionAsMaterial": false,
@@ -7684,7 +7729,7 @@ export default [
 			"en": "Wood"
 		},
 		"fusion": true,
-		"highlight": true,
+		"highlight": false,
 		"formulas": [["龍王","女神"],["兇鳥","妖魔"],["兇鳥","妖精"],["妖獸","妖精"],["妖獸","地靈"],["邪龍","妖精"],["幽鬼","龍王"],["幽鬼","妖精"],["兇鳥","鬼女"],["兇鳥","夜魔"],["邪龍","妖獸"],["邪龍","幽鬼"],["幽鬼","妖獸"]],
 		"devils": [
 			{
