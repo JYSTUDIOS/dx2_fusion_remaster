@@ -4365,7 +4365,7 @@ export default [
 				"elements": ["nu","","","","","rp","rp"],
 				"type": "attack",
 				"fusion": true,
-				"fusionAsMaterial": true,
+				"fusionAsMaterial": false,
 				"formula": [
 					"ベルゼブブ（人）",
 					"ベルゼブブ",
