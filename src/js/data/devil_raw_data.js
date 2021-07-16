@@ -2304,7 +2304,7 @@ export default [
 			"en": "Snake"
 		},
 		"fusion": true,
-		"highlight": true,
+		"highlight": false,
 		"formulas": [["龍神","墮天使"],["龍神","邪神"],["天使","靈鳥"],["妖魔","幻魔"],["妖精","幻魔"],["妖鬼","墮天使"],["夜魔","天使"],["外道","幻魔"],["外道","妖魔"],["魔王","破壞神"],["魔王","外道"],["邪鬼","龍神"],["地靈","鬼神"],["邪龍","大天使"],["邪龍","地靈"],["魔王","兇鳥"]],
 		"devils": [
 			{
@@ -4323,7 +4323,7 @@ export default [
 			"en": "Tyrant"
 		},
 		"fusion": true,
-		"highlight": false,
+		"highlight": true,
 		"formulas": [["幻魔","魔神"],["破壞神","大天使"],["破壞神","魔神"],["龍神","聖獸"],["鬼神","地母神"],["邪鬼","幻魔"],["龍王","破壞神"],["墮天使","破壞神"],["邪神","破壞神"],["地靈","龍神"],["邪龍","破壞神"],["邪龍","邪鬼"],["兇鳥","女神"],["兇鳥","魔神"],["兇鳥","破壞神"],["兇鳥","鬼神"]],
 		"devils": [
 			{
@@ -4347,6 +4347,31 @@ export default [
 				"formula": [],
 				"fusionMag": 0,
 				"source": "normal_fusion"
+			},
+			{
+				"id": "297",
+				"name": "ベルゼブブ（王）",
+				"names": {
+					"ja": "ベルゼブブ（王）",
+					"tw": "别西卜（王）",
+					"en": "Beelzebub（king）"
+				},
+				"rarity": 5,
+				"grade": 97,
+				"icon": "maou_beruzebubu_king.jpg",
+				"skills": ["大虐殺者","地獄の王","死蠅の葬列"],
+				"skill4": ["","アルス・マグナ","ラスタキャンディ","即死無効","物理吸収"],
+				"skill5": ["","","","",""],
+				"elements": ["nu","","","","","rp","rp"],
+				"type": "attack",
+				"fusion": true,
+				"fusionAsMaterial": true,
+				"formula": [
+					"ベルゼブブ（人）",
+					"ベルゼブブ",
+				],
+				"fusionMag": 1000000,
+				"source": "multi_fusion"
 			},
 			{
 				"id": "277",
@@ -4419,6 +4444,28 @@ export default [
 				"source": "normal_fusion"
 			},
 			{
+				"id": "298",
+				"name": "ベルゼブブ（人）",
+				"names": {
+					"ja": "ベルゼブブ（人）",
+					"tw": "别西卜（人）",
+					"en": "Beelzebub (Human)"
+				},
+				"rarity": 5,
+				"grade": 86,
+				"icon": "maou_beruzebubu_human.jpg",
+				"skills": ["狂い咲き","死霊の王","大いなる混沌"],
+				"skill4": ["","メギドラオン","月影の衰退","威圧の構え","電撃吸収"],
+				"skill5": ["","万能サバイバ","快癒サバイバ","強靭の権化","不動の権化"],
+				"elements": ["","","","nu","","nu","rp"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
 				"id": "260",
 				"name": "ベリアル",
 				"names": {
@@ -4486,10 +4533,10 @@ export default [
 			},
 			{
 				"id": "285",
-				"name": "スルト【異世界】",
+				"name": "スルト [異世界]",
 				"names": {
-					"ja": "スルト【異世界】",
-					"tw": "史爾特爾【異世界】",
+					"ja": "スルト [異世界]",
+					"tw": "史爾特爾 [異世界]",
 					"en": "Surt A"
 				},
 				"rarity": 5,
@@ -6965,7 +7012,7 @@ export default [
 			"en": "??"
 		},
 		"fusion": false,
-		"highlight": true,
+		"highlight": false,
 		"formulas": [],
 		"devils": [
 			{

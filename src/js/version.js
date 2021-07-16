@@ -1,3 +1,3 @@
 export default {
-    version: 'JY-210624'
+    version: 'JY-210720'
 }
