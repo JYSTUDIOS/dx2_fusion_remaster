@@ -2368,7 +2368,7 @@ export default [
 				"elements": ["","","wk","rs","","",""],
 				"type": "attack",
 				"fusion": false,
-				"fusionAsMaterial": true,
+				"fusionAsMaterial": false,
 				"formula": [],
 				"fusionMag": 0,
 				"source": "normal_fusion"
