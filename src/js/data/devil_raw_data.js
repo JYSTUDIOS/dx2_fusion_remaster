@@ -2959,7 +2959,7 @@ export default [
 			"en": "Fallen"
 		},
 		"fusion": true,
-		"highlight": false,
+		"highlight": true,
 		"formulas": [
 			["龍神","破壞神"],
 			["龍神","魔王"],
@@ -2999,6 +2999,50 @@ export default [
 				"formula": [],
 				"fusionMag": 0,
 				"source": "normal_fusion"
+			},
+			{
+				"id": "299",
+				"name": "ゴモリー",
+				"names": {
+					"ja": "ゴモリー",
+					"tw": "格莫瑞",
+					"en": "Gemori"
+				},
+				"rarity": 5,
+				"grade": 83,
+				"icon": "datensi_gemori.jpg",
+				"skills": ["メディラマ","全知なる導き","貴婦人の加護"],
+				"skill4": ["","メギドラオン","常世の祈り","幻影の権化","氷結無効"],
+				"skill5": ["","大虐殺者","奈落のマスク","寸分の見切り","強壮の権化"],
+				"elements": ["","nu","wk","","","rs","nu"],
+				"type": "support",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
+				"id": "300",
+				"name": "ムールムール",
+				"names": {
+					"ja": "ムールムール",
+					"tw": "毛莫",
+					"en": "Murmur"
+				},
+				"rarity": 5,
+				"grade": 83,
+				"icon": "datensi_murmur.jpg",
+				"skills": ["鋭気の権化","地獄の公爵","流転邪槍"],
+				"skill4": ["","冥界破","スクンダオート","即死無効","呪殺吸収"],
+				"skill5": ["","千発千中","タルカオート","強靭の権化","呪殺ハイブースタ"],
+				"elements": ["","wk","","rp","rs","wk","nu"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
 			},
 			{
 				"id": "275",
@@ -4323,7 +4367,7 @@ export default [
 			"en": "Tyrant"
 		},
 		"fusion": true,
-		"highlight": true,
+		"highlight": false,
 		"formulas": [["幻魔","魔神"],["破壞神","大天使"],["破壞神","魔神"],["龍神","聖獸"],["鬼神","地母神"],["邪鬼","幻魔"],["龍王","破壞神"],["墮天使","破壞神"],["邪神","破壞神"],["地靈","龍神"],["邪龍","破壞神"],["邪龍","邪鬼"],["兇鳥","女神"],["兇鳥","魔神"],["兇鳥","破壞神"],["兇鳥","鬼神"]],
 		"devils": [
 			{
