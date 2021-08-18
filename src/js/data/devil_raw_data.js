@@ -2959,7 +2959,7 @@ export default [
 			"en": "Fallen"
 		},
 		"fusion": true,
-		"highlight": true,
+		"highlight": false,
 		"formulas": [
 			["龍神","破壞神"],
 			["龍神","魔王"],
@@ -6116,7 +6116,7 @@ export default [
 			"en": "Dragon"
 		},
 		"fusion": true,
-		"highlight": false,
+		"highlight": true,
 		"formulas": [["破壞神","神獸"],["破壞神","幻魔"],["鬼神","神獸"],["龍王","聖獸"],["地靈","墮天使"],["邪鬼","鬼神"],["墮天使","地母神"],["墮天使","龍王"],["妖鬼","地母神"],["妖鬼","龍王"],["妖獸","鬼神"],["邪龍","地母神"],["邪龍","妖鬼"],["邪龍","外道"],["幽鬼","鬼神"],["妖獸","兇鳥"]],
 		"devils": [
 			{
@@ -6140,6 +6140,28 @@ export default [
 				"formula": [],
 				"fusionMag": 0,
 				"source": "normal_fusion"
+			},
+			{
+				"id": "301",
+				"name": "コウガサブロウ",
+				"names": {
+					"ja": "コウガサブロウ",
+					"tw": "甲賀三郎",
+					"en": "Koga Saburo"
+				},
+				"rarity": 5,
+				"grade": 87,
+				"icon": "ryuusin_KogaSaburo.jpg",
+				"skills": ["龍の反応","霊的国防の龍神","双刃天駆"],
+				"skill4": ["","空間殺法","陽光の繁栄","衝撃ハイブースタ","電撃吸収"],
+				"skill5": ["","技巧の権化","迅速の権化","大虐殺者","氷結無効"],
+				"elements": ["","","wk","rs","rp","",""],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": true,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
 			},
 			{
 				"id": "178a",
