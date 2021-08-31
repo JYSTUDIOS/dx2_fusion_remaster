@@ -6116,7 +6116,7 @@ export default [
 			"en": "Dragon"
 		},
 		"fusion": true,
-		"highlight": true,
+		"highlight": false,
 		"formulas": [["破壞神","神獸"],["破壞神","幻魔"],["鬼神","神獸"],["龍王","聖獸"],["地靈","墮天使"],["邪鬼","鬼神"],["墮天使","地母神"],["墮天使","龍王"],["妖鬼","地母神"],["妖鬼","龍王"],["妖獸","鬼神"],["邪龍","地母神"],["邪龍","妖鬼"],["邪龍","外道"],["幽鬼","鬼神"],["妖獸","兇鳥"]],
 		"devils": [
 			{
@@ -7715,11 +7715,11 @@ export default [
 			"en": "Cyborg"
 		},
 		"fusion": false,
-		"highlight": false,
+		"highlight": true,
 		"formulas": [],
 		"devils": [
 			{
-				"id": "",
+				"id": "302",
 				"name": "草薙素子",
 				"names": {
 					"ja": "草薙素子",
@@ -7733,6 +7733,28 @@ export default [
 				"skill4": ["","空間殺法","チャージ","物理貫通","物理反射"],
 				"skill5": ["","破壊の権化","ラクンダオート","刹那五月雨撃ち","超自然治癒"],
 				"elements": ["rs","","","","","rs","rs"],
+				"type": "attack",
+				"fusion": false,
+				"fusionAsMaterial": false,
+				"formula": [],
+				"fusionMag": 0,
+				"source": "summon"
+			},
+			{
+				"id": "303",
+				"name": "バトー",
+				"names": {
+					"ja": "バトー",
+					"tw": "巴特",
+					"en": "Batou"
+				},
+				"rarity": 5,
+				"grade": 84,
+				"icon": "gitai_batou.jpg",
+				"skills": ["強靭の権化","タチコマの援護","セブロ C-40A"],
+				"skill4": ["","怪力乱神","タルンダオート","致命の一撃","物理反射"],
+				"skill5": ["","物理サバイバ","陽光の繁栄","ギガントマキア","千発千中"],
+				"elements": ["nu","","","","","",""],
 				"type": "attack",
 				"fusion": false,
 				"fusionAsMaterial": false,
